@@ -1,0 +1,25 @@
+{
+  "name": "task09_1",
+  "description": "baidunews",
+  "main": "",
+  "keywords": [
+    "baidunews"
+  ],
+  "authors": [
+    "xiaogantao"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

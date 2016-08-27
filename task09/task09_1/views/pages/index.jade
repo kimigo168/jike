@@ -1,0 +1,90 @@
+doctype
+html
+head
+    meta(charset="utf-8")
+    meta(name="viewport",content="width=device-width,initial-scale=1")
+    title 手机百度新闻首页
+    link(href="/css/app.css",rel="stylesheet",type="text/css")
+body
+    .wrapper
+        header
+            .public-news-toolbar
+                .public-news-toolbar-l
+                    .news-toolbar-btn.btn-baidu
+                    .news-toolbar-btn.btn-userhome
+                .public-news-toolbar-r
+                    .news-toolbar-btn.btn-search
+                    .news-toolbar-btn.btn-subscribe
+        .index-content
+            .index-content-navigator
+                .divider
+                .content
+                    table
+                        tbody
+                            tr
+                                td(colspan="1")
+                                    div
+                                        b
+                                        a(id="recommend",class="nav-btn cur",href="#",title="recommend") 推荐
+                                 td(colspan="1")
+                                    div
+                                        b
+                                        a(id="baijia",class="nav-btn",href="/baijia",title="baijia") 百家
+                                 td(colspan="1")
+                                    div
+                                        b
+                                        a(id="local",class="nav-btn",href="/local",title="local") 本地
+                                td(colspan="1")
+                                    div
+                                        b
+                                        a 图片
+                                td(colspan="1")
+                                    div
+                                        b
+                                        a 娱乐
+                                td(colspan="1")
+                                    div
+                                        b
+                                        a 社会
+                            tr.last-shown-line
+                                td(colspan="1")
+                                    div
+                                        b
+                                        a 军事
+                                td(colspan="1")
+                                    div
+                                        b
+                                        a 科技
+                                td(colspan="2")
+                                    div
+                                        b
+                                        a 互联网
+                                td(colspan="1")
+                                    div
+                                        b
+                                        a 女人
+                                td(colspan="1")
+                                    div
+                                        b
+                                        a 搞笑
+                                        .more 更多
+                                            .down-triangle
+                .divider.tail
+            .index-content-section
+                .index-content-subpage
+                    .index-view-subpage
+                        .index-list
+                            each item in result
+                                .index-list-item
+                                    .index-list-main
+                                        .index-list-image
+                                            img(src="#{item.newsimg}")
+                                        .index-list-text
+                                            .index-list-text-title #{item.newstitle}
+                                            .index-list-text-abs #{item.newscontent}
+                                        .index-list-bottom
+                                            .index-list-time
+                                                b.tip-time #{item.addtime}
+
+
+

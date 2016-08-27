@@ -1,0 +1,30 @@
+extend ../layout
+
+block content
+    .container
+        h2 新闻更新
+        .row
+            form.form-horizontal(method="post", action="/admin/control/new")
+                input(type="hidden", name="newsid", value="#{result[0].newsid}")
+                .form-group
+                    label.col-sm-2.control-label(for="newsTitle") 新闻标题
+                    .col-sm-10
+                        input#newsTitle.form-control(type="text", name="newstitle", value="#{result[0].newstitle}")
+                .form-group
+                    label.col-sm-2.control-label(for="newsImg") 图片地址url
+                    .col-sm-10
+                        input#newsImg.form-control(type="text", name="newsimg", value="#{result[0].newsimg}")
+                .form-group
+                    label.col-sm-2.control-label(for="newsContent") 新闻内容
+                    .col-sm-10
+                        input#newsContent.form-control(type="text", name="newscontent", value="#{result[0].newscontent}")
+                .form-group
+                    label.col-sm-2.control-label(for="newsClassify") 新闻类别
+                    .col-sm-10
+                        input#inputLanguage.form-control(type="text", name="newsclassify", value="#{result[0].newsclassify}")
+                .form-group
+                    label.col-sm-2.control-label(for="addTime") 录入时间
+                    .col-sm-10
+                        input#addTime.form-control(type="text", name="addtime", value="#{result[0].addtime}")
+                .col-sm-offset-2.col-sm-10
+                    button.btn.btn-primary(type="submit") 提交

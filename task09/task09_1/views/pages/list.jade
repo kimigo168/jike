@@ -1,0 +1,29 @@
+extend ../layout
+
+block content
+    .container
+        h2 新闻列表
+            a.btn.btn-primary(target="_blank",href="../add",style="float:right;") 新增
+        .row
+            table.table.table-hover.table-borderedy
+                thead
+                    tr
+                        th 新闻标题
+                        th 图片地址url
+                        th 新闻内容
+                        th 新闻类别
+                        th 录入时间
+                        th 更新
+                        th 删除
+                    tbody
+                        each item in result
+                            tr(class="item-id-#{item.newsid}")
+                                td #{item.newstitle}
+                                td #{item.newsimg}
+                                td #{item.newscontent}
+                                td #{item.newsclassify}
+                                td #{item.addtime}
+                                td: a.btn.btn-success(target="_blank", href="../admin/control/query?id=#{item.newsid}") 更新
+                                td
+                                    button.btn.btn-danger.del(type="button", data-id="#{item.newsid}") 删除
+    script(src="/js/admin.js")
