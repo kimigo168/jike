@@ -1,0 +1,3592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="name" content="content">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>极客学院首页</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/task07_2_1.css">
+ 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+	<div class="wrapper" >
+		<!-- 标题及搜索框 -->
+		<div class="header w-1000 mar-t20">
+			<div class="wrap">
+				<!-- 极客学院Logo图片 -->
+				<a href="">
+					<h2><img src="img/jklogo.png" class="jklogo"  alt="极客学院logo"></h2>
+				</a>
+				<!-- 广告盒 -->
+				<div class="adbox"></div>
+				<div class="searchbox">
+					<div class="headsearch">
+						<input type="text" class="search-text" placeholder="搜索课程、问答或Wiki"/>
+						<input type="submit" class="search-btn" value="" >
+						<div class="hot-words">
+							<a href="http://search.jikexueyuan.com/course/?q=Android">Android</a>
+							<a href="http://search.jikexueyuan.com/course/?q=iOS">iOs</a>
+							<a href="http://search.jikexueyuan.com/course/?q=HTML5">HTML5</a>
+						</div>
+					</div>
+				</div>
+				<div class="loginbox">
+					<a href="#"><span class="mymessage"></span></a>
+					<a href=""><img class="head-vip" src="img/vip-year_3ecca1f.png" alt="vip图标"></a>
+					<span class="usermenu">
+						<a href="http://www.jikexueyuan.com/member/" rel="nofollow">jike_9626907<i class="arrow"></i></a>
+						<!-- 用户选项下拉子菜单 -->
+					</span>
+					<a class="user-change" href="http://www.jikexueyuan.com/member/setting.html">[修改]</a>
+					<div class="clear"></div>
+				</div>
+				<!--  -->
+			</div>
+		</div>
+		<!-- 绿色分隔线 -->
+		<div class="loading">
+			<div class="loading-length"></div>
+		</div>
+		<!-- 导航部分 -->
+		<div class="navposition">
+			<div id="navbox" class="w-1000">
+				<!-- 左侧导航主体部分 -->
+				<div class="nav">
+					<ul class="navbox">
+						<li><a href="http://www.jikexuyuan.com/">首页</a>
+							<ul id="menu2" class="cf">
+								<li>
+									<p><a href="#">课程库</a></p>
+									<p><a href="#">知识体系图</a></p>
+									<p><a href="#">职业路径图</a></p>
+									<p><a href="#">系列课程</a></p>
+								</li>
+								<li>
+									<p><a href="#">Web前端开发</a></p>
+									<p><a href="#">Android开发</a></p>
+									<p><a href="#">PHP开发</a></p>
+									<p><a href="#">iOs开发</a></p>
+									<p><a href="#">Javaweb开发</a></p>
+								</li>
+								<li>
+									<p><a href="#">Wiki</a></p>
+									<p><a href="#">技术问答</a></p>
+									<p><a href="#">社群</a></p>
+									<p><a href="#">资源分享</a></p>
+								</li>
+								<li>
+									<p><a href="#">高校合作</a></p>
+									<p><a href="#">极客人才联盟</a></p>
+									<p><a href="#">布道师招聘</a></p>
+									<p><a href="#">实战教练招募</a></p>
+								</li>
+							</ul>
+						</li>
+						<li><a href="http://www.jikexueyuan.com/course/">职业课程</a></li>
+						<li><a href="http://j.jikexueyuan.com/?huodong=jiuye_all_guide">就业学习</a></li>
+						<li><a href="#">极客社区</a></li>
+						<li><a href="">极客+</a></li>
+						<!--<div class="clear"></div>-->
+					</ul>
+				</div>
+				<!-- 右侧导航及图标志 -->
+				<div class="user-need">
+					<a href="http://www.jikexueyuan.com/vip/"><span><img src="img/vip-icon_76ae754.png" alt="vip会员">VIP会员</span></a>
+					<a href="http://press.jikexueyuan.com/topic/"><span><img src="img/star-icon_c593bc1.png" alt="课程">求课程</span></a>
+					<a href="http://www.jikexueyuan.com/app/"><span><img src="img/dl-icon_4bc18a7.png" alt="下载APP"><img  class="new" src="img/newicon_56b11ef.png" alt="新">APP下载</span></a>
+				</div>
+
+			</div>
+			<!-- navbox end-->
+		</div>
+		<!-- navposition end-->
+
+	<div class="content">
+		<!-- 左中右三栏布局 -->
+		<div class="w-1000 mar-t20 cf">
+			<!-- 左列导航 -->
+			<div class="lesson-classfiy-nav">
+				<ul id="navleft-menu">
+					<li>
+						<a href="#">移动开发</a>
+						<ul id="navleft-childmenu">
+							<li>
+								<dl>
+									<dt><a href="">应用开发</a></dt>
+									<dd><a href="">Android</a><a href="">iOs</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="">游戏开发</a></dt>
+									<dd><a href="">Cocos</a><a href="">Unity3D</a><a href="">SpriteKit 2D</a><a href="">Unrel</a></dd>
+								</dl>
+								<dl>
+									<dt><a href=""></a>常用框架</dt>
+									<dd><a href="">Cordova</a><a href="">React Native</a></dd>
+								</dl>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">前端开发</a>
+						<ul>
+							<li>
+								<dl>
+									<dt><a href="#">前端基础</a></dt>
+									<dd><a href="#">HTML</a><a href="#">CSS</a><a href="#">JavaScript</a><a href="#">HTML5</a>
+									<a href="#">CSS3</a><a href="#">技术前瞻</a></dd>
+								</dl>
+								<dl>
+									<dt>前端进阶</dt>
+									<dd><a href="#">Typescript</a><a href="#">前端安全</a><a href="#">项目实践</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="#">前端框架</a></dt>
+									<dd><a href="#">jQuery</a><a href="#">jQuery UI</a><a href="#">jQuery Mobile</a><a href="#">Ext JS</a><a href="#">AngularJS</a><a href="#">ReachJS</a><a href="#">Bootstrap</a><a href="#">React Native</a><a href="#">Backbone</a><a href="#">Three.js</a><a href="#">Mootools</a><a href="#">Compass</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="#">HTML游戏</a></dt>
+									<dd><a href="#">Canvas</a><a href="#">SVG</a><a href="#">WebGL</a><a href="#">Cocos2d-js</a><a href="#">CreatJS</a><a href="#">Flash</a><a href="#">Unreal</a><a href="#">Egret</a><a href="#">Phaser</a></dd>
+								</dl>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">后端开发</a>
+						<ul>
+							<li>
+								<dl>
+									<dt><a href="#">Python</a></dt>
+									<dd><a href="#">Python基础</a><a href="#">web2py</a><a href="#">Djanjo</a><a href="#">Flash</a><a href="#">Gui</a><a href="#">数据挖掘与分析</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="#">PHP</a></dt>
+									<dd><a href="#">PHP基础</a><a href="#">YII</a><a href="#">ThinkPHP</a><a href="#">Laravel</a><a href="#">WordPress</a><a href="#">Phalcon</a><a href="#">Apache</a><a href="#">FacebookHack</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="#">Node.js</a></dt>
+									<dd><a href="#">Node.js基础</a><a href="#">express</a><a href="#">Meteor</a><a href="#">Hexo</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="#">ASP.NET</a></dt>
+									<dd><a href="#">C#</a><a href="#">APS.NET MVC</a><a href="#">Entity Framework</a><a href="#">WPF</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="#">J2EE</a></dt>
+									<dd><a href="#">JSP</a><a href="#">Maven</a><a href="#">SpringMVC</a><a href="#">Struts2</a><a href="#">Mybatis</a><a href="#">Hibernate</a><a href="#">Lucene</a><a href="#">常用框架项目实践</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="#">Ruby</a></dt>
+									<dd><a href="#">Ruby基础</a><a href="#">Ruby on rails</a><a href="#">Grape</a><a href="#">Ruby进阶</a><a href="#">RubyMine</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="#">Go</a></dt>
+									<dd><a href="#">Go基础</a><a href="#">Revel</a><a href="#">Beego</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="#">Erlang</a></dt>
+									<dd><a href="#">Erlang基础</a></dd>
+								</dl>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">基础知识</a>
+						<ul>
+							<li>
+								<dl>
+									<dt><a href="#">基础语言</a></dt>
+									<dd><a href="#">C</a><a href="#">C++</a><a href="#">Objective-C</a><a href="#">Swift</a><a href="#">C#</a><a href="#">Java</a><a href="#">Perl</a><a href="#">Shell</a><a href="#">Qt</a><a href="#">Scale</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="#">开发基础</a></dt>
+									<dd><a href="#">算法基础</a><a href="#">数据结构</a><a href="#">设计模式</a><a href="#">软件工程</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="#">开发工具</a></dt>
+									<dd><a href="#">Git/Github</a><a href="#">SVN</a><a href="#">VI</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="#">开放标准</a></dt>
+									<dd><a href="#">OpenCL</a><a href="#">Open XML</a><a href="#">OpenGL/GLES</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="#"></a></dt>
+									<dd><a href="#"></a><a href="#"></a><a href="#"></a></dd>
+								</dl>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">云计算&amp;大数据</a>
+						<ul>
+							<li>
+								<dl>
+									<dt><a href="#">云计算</a></dt>
+									<dd><a href="#">OpenStack</a><a href="#">Docker</a><a href="#">ClockStack</a><a href="#">Windows Azure</a><a href="#">IaaS</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="#">大数据</a></dt>
+									<dd><a href="#">Hadoop</a><a href="#">Storm</a><a href="#">Hive</a><a href="#">Flume</a><a href="#">Kafka</a><a href="#">Zookeeper</a><a href="#">Habase Spark</a><a href="#">信息检索</a><a href="#">数据分析</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="#">虚拟化</a></dt>
+									<dd><a href="#">VMware</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="#">云平台</a></dt>
+									<dd><a href="#">腾讯云</a></dd>
+								</dl>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">智能硬件&amp;物联网</a>
+						<ul>
+							<li>
+								<dl>
+									<dt><a href="#">硬件架构</a></dt>
+									<dd><a href="#">C51</a><a href="#">ARM</a><a href="#">Keil</a><a href="#">Cortex-M</a><a href="#">Cortex-A</a><a href="#">AVR</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="#">物联网操作系统</a></dt>
+									<dd><a href="#">RTOS</a><a href="#">Android Wear</a><a href="#">Apple Watchkit</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="#">开源硬件平台</a></dt>
+									<dd><a href="#">Arduino</a><a href="#">树莓派</a><a href="#">mbed</a><a href="#">Gokit</a><a href="#">LeMaker Guitar</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="#">通信链接技术</a></dt>
+									<dd><a href="#">无线wifi</a><a href="#">通信技术</a><a href="#">蓝牙</a><a href="#">NFC</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="#">信息感知处理技术</a></dt>
+									<dd><a href="#">传感器</a><a href="#">数据挖掘</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="#">人机交互技术</a></dt>
+									<dd><a href="#">语音识别</a><a href="#">人脸识别</a><a href="#">手势识别</a></dd>
+								</dl>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">数据库</a>
+						<ul>
+							<li>
+								<dl>
+									<dt><a href="#">SQL</a></dt>
+									<dd><a href="#">MySOL</a><a href="#">SQL Server</a><a href="#">Oracle</a><a href="#">SQLite</a><a href="#">PostgreSQL</a><a href="#">DB2</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="#">NoSQL</a></dt>
+									<dd><a href="#">Cassandra</a><a href="#">Redis</a><a href="#">MongoDB</a></dd>
+								</dl>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">认证考试</a>
+						<ul>
+							<li>
+								<dl>
+									<dt><a href="#">计算机等级考试</a></dt>
+									<dd><a href="#">一级</a><a href="#">二级C</a><a href="#">二级Java</a><a href="#">二级C++</a><a href="#">网络工程师</a><a href="#">数据库工程师</a><a href="#">信息安全工程师</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="#">企业认证</a></dt>
+									<dd><a href="#">思科认证</a><a href="#">Oracle认证</a><a href="#">Linux认证</a><a href="#">ARM认证</a></dd>
+								</dl>	
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">企业IT</a>
+						<ul>
+							<li>
+								<dl>
+									<dt><a href="#">运维管理</a></dt>
+									<dd><a href="#">Shell</a><a href="#">自动化运维</a><a href="#">Nginx</a><a href="#">Apache</a><a href="#">运维监控</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="#">商业智能</a></dt>
+									<dd><a href="#">FileMaker</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="#">操作系统</a></dt>
+									<dd><a href="#">Linux</a><a href="#">Windows</a><a href="#">Mac OS</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="#">企业服务</a></dt>
+									<dd><a href="#">B2C</a></dd>
+								</dl>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">设计&amp;产品测试</a>
+						<ul>
+							<li>
+								<dl>
+									<dt><a href="#">设计基础</a></dt>
+									<dd><a href="#">Photoshop</a><a href="#">Flash</a><a href="#">Illustrator</a><a href="#">Sketch</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="#">游戏设计</a></dt>
+									<dd><a href="#">界面设计</a><a href="#">角色设计</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="#">产品经理</a></dt>
+									<dd><a href="#">需求分析</a><a href="#">Axure</a><a href="#">项目实战</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="#">视觉设计</a></dt>
+									<dd><a href="#">应用UI设计</a><a href="#">网页UI设计</a><a href="#">设计理论</a><a href="#">图形设计</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="#">测试工具</a></dt>
+									<dd><a href="#">自动化测试</a></dd>
+								</dl>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="lesson-center-focus">
+				<!-- 中上广告图片开始 -->
+				<div class="index-banner">
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+					  	<ol class="carousel-indicators">
+						    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+						    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+						    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+						    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+					 	</ol>
+				  <!-- Wrapper for slides -->
+					  	<div class="carousel-inner" role="listbox">
+					    	<div class="item active">
+						     	<a href="#"><img src="img/1.jpg" alt="Web前端"></a>
+						      	<div class="carousel-caption">
+						       		 
+					      		</div>
+							</div>
+						    <div class="item">
+						      	<a href="#"><img src="img/2.jpg" alt="PHP职业路径"></a>
+						      	<div class="carousel-caption">
+						       		
+						      	</div>
+						    </div>
+					    	<div class="item">
+						      	<a href="#"><img src="img/3.jpg" alt="PHP工程师"></a>
+						      	<div class="carousel-caption">
+						       		 
+						      	</div>
+						    </div>
+						    <div class="item">
+						      	<a href="#"><img src="img/4.jpg" alt="Android开发"></a>
+						      	<div class="carousel-caption">
+						       		
+						      	</div>
+						    </div>
+						    <div class="item">
+						      	<a href="#"><img src="img/5.jpg" alt="Javaweb开发"></a>
+						      	<div class="carousel-caption">
+						       		 
+						      	</div>
+						    </div>
+						    <div class="item">
+						      	<a href="#"><img src="img/6.jpg" alt="iOs开发"></a>
+						      	<div class="carousel-caption">
+						       		 
+						      	</div>
+						    </div>
+				  		</div>
+				  <!-- Controls -->
+						  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+						    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						    <span class="sr-only">Previous</span>
+						  </a>
+						  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+						    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						    <span class="sr-only">Next</span>
+						  </a>
+					</div>		
+				<!-- 中上广告结束 -->
+				</div>
+				<!-- 中下固定广告 -->
+				<div>
+				    <div class="focuswork-wrap">
+				        <span class="mr_frBtnL prev"></span>
+				        <div class="lesson-list">
+				          <ul>
+				           <li><a href="#" ><img src="img/html.png"/><p class="lesson-title">HTML5/Web前端工程师</p><p class="lesson-info">前腾讯高级前端工程师授课</p></a></li>
+				           <li><a href="#" ><img src="img/5718847c84d06.png"/><p class="lesson-title">PHP开发工程师</p><p class="lesson-info">PHP是世界上最好的语言</p></a></li>
+				           <li><a href="#"><img src="img/56615f22aa6eb.jpg"/><p class="lesson-title">极客学院就业班</p><p class="lesson-info">0基础四个月成为IT工程师</p></a></li>
+				          </ul>
+				        </div>
+				        <span class="mr_frBtnR next"></span>
+				    </div>
+				   
+			  	</div>
+			  	</div>
+			<!-- 右侧学员信息栏  -->
+			<div class="lesson-right-show">
+				<div class="news">
+					<h4>快讯</h4>
+					<ul class="list">
+						<li class="item"><a href="#">[限时免费]每周限免系列课程</a></li>
+						<li class="item"><a id="lia2" href="#">Python实战系列课程</a></li>
+						<li class="item"><a href="#">系列课程iOs支付功能</a></li>
+						<li class="item"><a href="#">PHP职业路径图大更新</a></li>
+					</ul>
+				</div>
+				<div class="user-info">
+					<div class="head-box">
+						<a href="#"><img src="img/default.gif" alt="默认头像"></a>
+					</div>
+					<div class="name-wrap">
+						<div class="hello-word">
+							<span class="word">Hi!<a href="#">jike_96..</a></span><a href="#"><img src="img/vip-year_3ecca1f.png" alt="年vip"></a>	
+						</div>
+						<div class="option">
+							<a href="#">学习记录</a>
+							<a href="#">我的回答</a>
+							<a href="#">设置</a>
+						</div>
+						<div class="operate">
+							<a href="#" class="vip">免费VIP</a>
+						</div>
+					</div>
+				</div>
+				<div class="recommend">
+					<ul class="start-list cf">
+						<li class="starli litop">
+							<span class="question-icon icon"></span>
+							<span class="title">问答</span>
+							<span class="angle-bottom"></span>
+						</li>
+						<li class="starli litop">
+							<span class="wiki-icon icon"></span>
+							<span class="title">wiki</span>
+							<span class="angle-bottom"></span>
+						</li>
+						<li class="starli litop">
+							<span class="course-icon icon"></span>
+							<span class="title">课程</span>
+							<span class="angle-bottom"></span>
+						</li>
+						<li class="starli litop">
+							<span class="community-icon icon"></span>
+							<span class="title">社群</span>
+							<span class="angle-bottom"></span>
+						</li>
+						<li class="starli">
+							<a href="#">
+								<span class="download-icon icon"></span>
+								<span class="title">下载</span>
+							</a>
+						</li>
+						<li class="starli">
+							<a href="#">
+								<span class="knowledge-icon icon"></span>
+								<span class="title">知识</span>
+							</a>
+						</li>
+						<li class="starli">
+							<a href="#">
+								<span class="career-icon icon"></span>
+								<span class="title">职业</span>
+							</a>
+						</li>
+						<li class="starli">
+							<a href="#">
+								<span class="vip-icon icon"></span>
+								<span class="title">VIP</span>
+							</a>
+						</li>
+					</ul>
+					<!-- 隐藏的课程 -->
+					<div class="movelist">
+						<!-- 问答、wiki、课程、社群 -->
+						<ul class="type-list cf">
+							<li class="question active">问答</li>
+							<li class="wiki">wiki</li>
+							<li class="lesson">课程</li>
+							<li class="group">社群</li>
+						</ul>
+						<!-- 对应li的内容 -->
+						<div class="licontent">
+							<!-- 问答详情 -->
+							<ul class="question tab-content cf">
+								<li>
+									<a href="#">
+										<img src="img/54578ddd8e62a.png" width="16" alt="问答技巧">
+										<span class="title">【问答技巧】怎样提问才能让我的问题更快速被解答？</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/54eeb7cba8791.png" width="16" alt="中文文档">
+										<span class="title">Bootstrap 最新版 V4 中文文档</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/devbase.png" width="16" alt="老师分享">
+										<span class="title">【老师分享】对LPS的Manacher算法感兴趣的同学请</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/games.png" width="16" alt="">
+										<span class="title">build_native.py时报错？</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/mobile.png" alt="超级菜鸟成长">
+										<span class="title">超级菜鸟想成为怎么成长？</span>
+									</a>
+								</li>
+							</ul>
+							<div class="recommendWiki">
+								<ul class="wiki cf">
+									<li>
+										<a href="#">
+											<img src="img/bc4abefb892d449d992bb76eaef70ba2.jpg" alt="java程序员眼中的Linux">
+											<p class="title">Java 程序员眼中的 Linux</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/6cf980d73a694bbfad9e0bced1a9d045.jpg" alt="搭建博客">
+											<p class="title">Django 搭建博客</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/82d392493bba44c4ab1199f03d2e23df.jpg" alt="Lua教程">
+											<p class="title">Lua 教程</p>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="recommendLesson">
+								<ul class="lesson cf">
+									<li>
+										<a href="#">
+											<img src="img/html.png" alt="html">
+											<p class="title">HTML5开发</p>	
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/android.png" alt="android">
+										<p class="title">Android</p>	
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/Java.png" alt="Java">
+										<p class="title">Java语言</p>	
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/55028a07c02d1.jpg" alt="JavaWeb">
+											<p class="title">JavaWeb</p>	
+										</a>
+										
+									</li>
+								</ul>
+							</div>
+							<div class="recommendGroup ">
+								<ul class="group cf">
+									<li class="cf">
+										<img src="img/c58bb41944592a9e1bf334472e5c078d.png" class="picture" alt="android1">
+										<div class="info">
+											<p class="title">Android工程师</p>
+											<p class="count">已有<span>1106</span>人加入</p>
+										</div>
+										<a href="#" class="join">＋ 加入</a>
+									</li>
+									<li class="cf">
+										<img src="img/b6b490c2efa84f1ea9ee435323118560.png" class="picture" alt="2222">
+										<div class="info">
+				                            <p class="title">Web大前端工程师</p>
+				                            <p class="count">已有<span>1409</span>人加入</p>
+				                        </div>
+				                        <a href="#" class="join">＋ 加入</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					<!-- 隐藏的课程 end-->
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!-- 热门课程导航 -->
+		<div class="hot-lesson w-1000 mar-t20" id="recommendName">
+			<ul class="main-lesson cf" id="main_lesson">
+				<li class="one-classfiy-lesson w_lesson" id="one_lesson" onmouseover='showsubmenu("one_lesson")' >热门推荐
+					<ul class="cf">
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<i class="free-icon"></i>
+								<a href="#">
+									<img src="img/5742b71557d06.jpg" alt="谷歌技术大会" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+							<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">Google I/O 2016技术揭秘与前瞻</a>
+								</h2>
+								<p>本课程主要针对2016 Google I/O大会Keynote发布的内容进行剖析。讲解Google目前发展的技术趋势及主打方向。并针对开发者在大会中所需要了解的知识方向进行分析。让开发者们了解接下去需要学习哪些技能来应对新发布的产品及技术。以及如何进行学习。</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时52分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">8048人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<i class="free-icon"></i>
+								<a href="#">
+									<img src="img/hotrecommand/571f242278c8d.jpg" alt="android" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+							<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">整站项目开发实战之网站首页布局搭建</a>
+								</h2>
+								<p>
+									设计本课程的目的是让 Web 前端工程师，可以轻松将设计师提供的 PSD 效果图，切分成 HTML 网页文件，学完本课程可以掌握 PS 软件的切图技巧和 HTML 布局技巧。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>5课时85分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>中级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">11477人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/hotrecommand/571ecfcc2dbfa.jpg" alt="android" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+							<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">Android Studio全方位指南之进阶使用技巧</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时53分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/hotrecommand/571d7a1ed4ea4.jpg" alt="微网站制作" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">Android Studio全方位指南之进阶使用技巧</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>3课时58分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/hotrecommand/570f03bc14c9e.jpg" alt="Python GUI入门" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">Python GUI入门</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>3课时43分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/hotrecommand/57158ff0bd80c.jpg" alt="Webservice概述" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">Webservice概述</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>5课时61分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/hotrecommand/570b17fe71605.jpg" alt="Webservice概述" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">移动应用的破解与防护</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时59分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/hotrecommand/56ef575e4745e.jpg" alt="微信公众平台" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">微信公众平台开发实战：微信绑定功能</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>3课时90分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li id="two_lesson" class="w_lesson" onmouseover='showsubmenu("two_lesson")'>最新课程
+					<ul class="two-classfiy-lesson">
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/lastestcourse/5743be5e25652.jpg" alt="微信公众平台" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">Dobbo使用入门(下)</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>3课时53分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<i class="free-icon"></i>
+								<a href="#">
+									<img src="img/lastestcourse/5743adb3d4a3c.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">JavaScript异步编程</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时29分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/lastestcourse/5742b71557d06.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">谷歌I/O2016技术揭秘与前瞻</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时52分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/lastestcourse/573a73565f0fe.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">Docker基础知识</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>3课时20分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<i class="free-icon"></i>
+								<a href="#">
+									<img src="img/lastestcourse/573584f9f2385.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">OSG人机交互</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>3课时20分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/lastestcourse/5731437213380.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">Arduino虚拟键盘(二)</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>3课时20分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/lastestcourse/572fedc688602.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">Flume基础架构</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/lastestcourse/572bfaea3adb8.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">一次线性回归</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li id="three_lesson" class="w_lesson" onmouseover='showsubmenu("three_lesson")'>免费课程
+					<ul class="three-classfiy-lesson cf" >
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<i class="free-icon"></i>
+								<a href="#">
+									<img src="img/lastestcourse/5742b71557d06.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">谷歌I/O2016技术揭秘与前瞻</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<i class="free-icon"></i>
+								<a href="#">
+									<img src="img/lastestcourse/573a73565f0fe.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">Docker基础知识</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<i class="free-icon"></i>
+								<a href="#">
+									<img src="img/freecourse/572972d315726.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">编程之美“凌云之志”线上分享之复赛题名提点</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<i class="free-icon"></i>
+								<a href="#">
+									<img src="img/lastestcourse/573a73565f0fe.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">Docker基础知识</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<i class="free-icon"></i>
+								<a href="#">
+									<img src="img/freecourse/571f242278c8d.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">整站项目开发实战之网站首页布局搭建</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<i class="free-icon"></i>
+								<a href="#">
+									<img src="img/freecourse/571a08cfe5246.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">编程之优秀选手唐飞经验分享</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<i class="free-icon"></i>
+								<a href="#">
+									<img src="img/hotrecommand/57158ff0bd80c.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">Webservice概述</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<i class="free-icon"></i>
+								<a href="#">
+									<img src="img/freecourse/570f654c2e097.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">编程之美优秀选手孙翔燕经验分享</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li id="fourth_lesson" class="w_lesson" onmouseover='showsubmenu("fourth_lesson")'>项目实战
+					<ul class="four-classfiy-lesson cf" >
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<i class="free-icon"></i>
+								<a href="#">
+									<img src="img/projectwork/55a5bffbb592f.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">安卓项目开发图案解锁</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<i class="free-icon"></i>
+								<a href="#">
+									<img src="img/projectwork/557a38245768b.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">安卓项目开发语音播报计算器</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/projectwork/558b665d1dfa0.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">iOs项目开发团购之导航搜索功能</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/projectwork/55934e8f88af4.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">安卓项目开发语音播报计算器功能扩展实现</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/projectwork/559dda9e77ab8.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">构建轻博客系统之项目准备</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/projectwork/55703ecb2b4cb.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">Cocos2D小小打飞机项目开发实战</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/projectwork/5578e9df3bd16.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">安卓项目开发实战：微博之项目搭建</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/projectwork/55554ce15004d.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">Cocos2D-x游戏：功夫小子概要及开发环境配置</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li id="five_lesson" class="w_lesson" onmouseover='showsubmenu("five_lesson")'>全球首发
+					<ul class="five-classfiy-lesson cf" >
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/freecourse/572972d315726.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">编程之美“凌云之志”线上分享之复赛题名提点</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/gobalfirst/5567c81a548e7.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">谷歌2015大揭秘</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/gobalfirst/551b5d08b2a73.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">Watchkit的界面对象</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/gobalfirst/551b5c6a507ea.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">Watchkit的Galance通知界面(下)</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/gobalfirst/551b5b72ca1eb.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">Watchkit的Galance通知界面(上)</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/gobalfirst/5508de1b9362e.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">Watchkit布局和导航</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/gobalfirst/5502515f794d2.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">Watchkit基础知识介绍</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/gobalfirst/54fe4789d0049.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">苹果2015新产品发布会介绍</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li id="six_lesson" class="w_lesson" onmouseover='showsubmenu("six_lesson")' >企业合作
+					<ul class="six-classfiy-lesson cf" >
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/gobalfirst/569eeab4307dd.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">微信web开发者工具详解</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/freecourse/572972d315726.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">编程之美“凌云之志”线上分享之复赛题名提点</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/freecourse/571a08cfe5246.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">编程之优秀选手唐飞经验分享</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/freecourse/570f654c2e097.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">编程之美优秀选手孙翔燕经验分享</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/hotrecommand/570b17fe71605.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">移动应用的破解与防护</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/corporation/570723d6d8e1e.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">编程之优秀选手朱睿经验分享</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/corporation/5704787a464a4.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">移动应用奔溃日志的获取与分析</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang"></i>
+								<a href="#">
+									<img src="img/corporation/56fcfaeaf20b2.jpg" alt="网站首页布局搭建" width="233">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+								</a>
+							</div>
+								<!-- 文字描述 -->
+							<div class="lesson-infor">
+								<h2 class="lesson-info-h2">
+									<a href="#">编程之美优秀选手陈晓琪经验分享</a>
+								</h2>
+								<p>
+									本课程主要介绍在使用 Android Studio 进行开发时会使用到的一些高级技巧，Gradle 的高级配置方案，多渠道打包，以及一些插件利器的安装使用。
+								</p>
+								<div class="timeandicon ">
+									<div class="cf">
+										<dl style="float:left;">
+											<dd class="mar-b8">
+												<i class="time-icon"></i>
+												<em>4课时45分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">7164人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img src="img/54578d8e652c3.png" alt="android" width="16">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+	
+		<!-- 职业路径图 -->
+		<div class="projectpath">
+			<div class="learnbox w-1000 mar-t20">
+				<!-- 职业路径图标题 -->
+				<div class="index-public-title cf">
+					<strong><a href="#">职业路径图</a></strong><i class="way">?</i>
+					<span class="way-info">更系统的职业技能学习途径</span><a href="#" class="more-lesson">更多>></a>
+				</div>
+				<div class="learn-card">
+					<a href="#">
+						<img src="img/projectpath/5615cd7d3e99f.png" alt="web前端" height="120">
+						<h2>WEB大前端工程师</h2>
+						<p>月薪15K-30K</p>
+						<p>web开发的未来趋势</p>
+						<button class="greenbtn2">立即学习</button>
+					</a>
+					<a href="#">
+						<img src="img/projectpath/560905e64a9d1.png" alt="web前端" height="120">
+						<h2>Android工程师</h2>
+						<p>月薪5K-30K</p>
+						<p>最火爆的职业，人才缺口大</p>
+						<button class="greenbtn2">立即学习</button>
+					</a>
+					<a href="#">
+						<img src="img/projectpath/56160c8b90692.png" alt="web前端" height="120">
+						<h2>iOs开发工程师</h2>
+						<p>月薪6K-30K</p>
+						<p>企业必争的人才资源</p>
+						<button class="greenbtn2">立即学习</button>
+					</a>
+					<a href="#">
+						<img src="img/projectpath/5616279756548.png" alt="web前端" height="120">
+						<h2>Javaweb工程师</h2>
+						<p>月薪6K-35K</p>
+						<p>就业面最广的职业方向</p>
+						<button class="greenbtn2">立即学习</button>
+					</a>
+					<a href="#">
+						<img src="img/projectpath/56162481a1ed6.png" alt="web前端" height="120">
+						<h2>PHP工程师</h2>
+						<p>月薪5K-30K</p>
+						<p>最好的开发语音，没有之一</p>
+						<button class="greenbtn2">立即学习</button>
+					</a>
+					<a href="#">
+						<img src="img/projectpath/561630f6d0d4c.png" alt="web前端" height="120">
+						<h2>Cocos2d工程师</h2>
+						<p>月薪7K-30K</p>
+						<p>最流行跨平台手机游戏开发</p>
+						<button class="greenbtn2">立即学习</button>
+					</a>
+					<a href="#">
+						<img src="img/projectpath/56163251dda94.png" alt="web前端" height="120">
+						<h2>Unity3D工程师</h2>
+						<p>月薪7K-40K</p>
+						<p>国内最热门的3D游戏引擎</p>
+						<button class="greenbtn2">立即学习</button>
+					</a>
+					<a href="#">
+						<img src="img/projectpath/56163d072d61d.png" alt="web前端" height="120">
+						<h2>ASP.NET工程师</h2>
+						<p>月薪7K-30K</p>
+						<p>微软强力推行的开发语言</p>
+						<button class="greenbtn2">立即学习</button>
+					</a>
+					<a href="#">
+						<img src="img/projectpath/5617474782723.png" alt="web前端" height="120">
+						<h2>大数据工程师</h2>
+						<p>月薪7K-30K</p>
+						<p>目前最稀缺的职业方向</p>
+						<button class="greenbtn2">立即学习</button>
+					</a>
+					<a href="#">
+						<img src="img/projectpath/56174712902f7.png" alt="web前端" height="120">
+						<h2>运维工程师</h2>
+						<p>月薪7K-30K</p>
+						<p>最折腾的职业岗位</p>
+						<button class="greenbtn2">敬请期待</button>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- 知识体系 -->
+		<div class="konwledge-syetem">
+			<div class="learnbox w-1000 mar-t40">
+			<!-- 知识体系标题 -->
+				<div class="index-public-title cf">
+					<strong><a href="#">知识体系图</a></strong><i class="way">?</i>
+					<span class="way-info">更快速找到你需要的课程</span><a href="#" class="more-lesson">更多>></a>
+				</div>
+				<div class="mapbox">
+					<div class="mapbox-1200">
+						<div class="card-transform">
+							<a href="#" class="flipper">
+								<div class="front">
+									<img src="img/knowledgepath/android.png" alt="Android">
+									<h2>Android</h2>
+									<span>90门课程</span>
+								</div>
+								<div class="back">
+									<strong>1000006人已学习</strong>
+									<button class="greenbtn">立即学习</button>
+								</div>
+							</a>
+						</div>
+						<div class="card-transform">
+							<a href="#" class="flipper">
+								<div class="front">
+									<img src="img/knowledgepath/html.png" alt="Android">
+									<h2>HTML5开发</h2>
+									<span>116门课程</span>
+								</div>
+								<div class="back">
+									<strong>2327942人已学习</strong>
+									<button class="greenbtn">立即学习</button>
+								</div>
+							</a>
+						</div>
+						<div class="card-transform">
+							<a href="#" class="flipper">
+								<div class="front">
+									<img src="img/knowledgepath/Java.png" alt="Android">
+									<h2>Java语言</h2>
+									<span>45门课程</span>
+								</div>
+								<div class="back">
+									<strong>1000006人已学习</strong>
+									<button class="greenbtn">立即学习</button>
+								</div>
+							</a>
+						</div>
+						<div class="card-transform">
+							<a href="#" class="flipper">
+								<div class="front">
+									<img src="img/knowledgepath/php.png" alt="Android">
+									<h2>PHP</h2>
+									<span>23门课程</span>
+								</div>
+								<div class="back">
+									<strong>1000006人已学习</strong>
+									<button class="greenbtn">立即学习</button>
+								</div>
+							</a>
+						</div>
+						<div class="card-transform">
+							<a href="#" class="flipper">
+								<div class="front">
+									<img src="img/knowledgepath/55028a07c02d1.jpg" alt="Android">
+									<h2>JavaWeb</h2>
+									<span>64门课程</span>
+								</div>
+								<div class="back">
+									<strong>1000006人已学习</strong>
+									<button class="greenbtn">立即学习</button>
+								</div>
+							</a>
+						</div>
+						<div class="card-transform">
+							<a href="#" class="flipper">
+								<div class="front">
+									<img src="img/knowledgepath/ios.png" alt="Android">
+									<h2>iOs</h2>
+									<span>51门课程</span>
+								</div>
+								<div class="back">
+									<strong>1000006人已学习</strong>
+									<button class="greenbtn">立即学习</button>
+								</div>
+							</a>
+						</div>
+						<div class="card-transform">
+							<a href="#" class="flipper">
+								<div class="front">
+									<img src="img/knowledgepath/5493e484b125e.png" alt="Android">
+									<h2>Asp.NET</h2>
+									<span>61门课程</span>
+								</div>
+								<div class="back">
+									<strong>1000006人已学习</strong>
+									<button class="greenbtn">立即学习</button>
+								</div>
+							</a>
+						</div>
+						<div class="card-transform">
+							<a href="#" class="flipper">
+								<div class="front">
+									<img src="img/knowledgepath/c.png" alt="Android">
+									<h2>C语言</h2>
+									<span>17门课程</span>
+								</div>
+								<div class="back">
+									<strong>1000006人已学习</strong>
+									<button class="greenbtn">立即学习</button>
+								</div>
+							</a>
+						</div>
+						<div class="card-transform">
+							<a href="#" class="flipper">
+								<div class="front">
+									<img src="img/knowledgepath/5457d0aee9018.png" alt="Android">
+									<h2>Python</h2>
+									<span>38门课程</span>
+								</div>
+								<div class="back">
+									<strong>1000006人已学习</strong>
+									<button class="greenbtn">立即学习</button>
+								</div>
+							</a>
+						</div>
+						<div class="card-transform">
+							<a href="#" class="flipper">
+								<div class="front">
+									<img src="img/knowledgepath/54f56c854161d.png" alt="Android">
+									<h2>Unity3D</h2>
+									<span>45门课程</span>
+								</div>
+								<div class="back">
+									<strong>1000006人已学习</strong>
+									<button class="greenbtn">立即学习</button>
+								</div>
+							</a>
+						</div>
+						<div class="card-transform">
+							<a href="#" class="flipper">
+								<div class="front">
+									<img src="img/knowledgepath/swift.png" alt="Android">
+									<h2>Swift语言</h2>
+									<span>11门课程</span>
+								</div>
+								<div class="back">
+									<strong>1000006人已学习</strong>
+									<button class="greenbtn">立即学习</button>
+								</div>
+							</a>
+						</div>
+						<div class="card-transform">
+							<a href="#" class="flipper">
+								<div class="front">
+									<img src="img/knowledgepath/54cfb5a451bbd.png" alt="Android">
+									<h2>C#</h2>
+									<span>30门课程</span>
+								</div>
+								<div class="back">
+									<strong>1000006人已学习</strong>
+									<button class="greenbtn">立即学习</button>
+								</div>
+							</a>
+						</div>
+						<div class="card-transform">
+							<a href="#" class="flipper">
+								<div class="front">
+									<img src="img/knowledgepath/54dab77e7b38a.png" alt="Android">
+									<h2>Bootstrap</h2>
+									<span>11门课程</span>
+								</div>
+								<div class="back">
+									<strong>1000006人已学习</strong>
+									<button class="greenbtn">立即学习</button>
+								</div>
+							</a>
+						</div>
+						<div class="card-transform">
+							<a href="#" class="flipper">
+								<div class="front">
+									<img src="img/knowledgepath/Cocos2d-x.png" alt="Android">
+									<h2>Cocos2d-x游戏开发</h2>
+									<span>89门课程</span>
+								</div>
+								<div class="back">
+									<strong>1000006人已学习</strong>
+									<button class="greenbtn">立即学习</button>
+								</div>
+							</a>
+						</div>
+						<div class="card-transform">
+							<a href="#" class="flipper">
+								<div class="front">
+									<img src="img/knowledgepath/55063dcc9bfe5.jpg" alt="Android">
+									<h2>计算机一级</h2>
+									<span>7门课程</span>
+								</div>
+								<div class="back">
+									<strong>1000006人已学习</strong>
+									<button class="greenbtn">立即学习</button>
+								</div>
+							</a>
+						</div>
+						<div class="card-transform">
+							<a href="#" class="flipper">
+								<div class="front">
+									<img src="img/knowledgepath/55063db66c32d.jpg" alt="Android">
+									<h2>计算机二级</h2>
+									<span>25门课程</span>
+								</div>
+								<div class="back">
+									<strong>1000006人已学习</strong>
+									<button class="greenbtn">立即学习</button>
+								</div>
+							</a>
+						</div>
+						<div class="card-transform">
+							<a href="#" class="flipper">
+								<div class="front">
+									<img src="img/knowledgepath/5535fe5532a6f.png" alt="Android">
+									<h2>GUI</h2>
+									<span>40门课程</span>
+								</div>
+								<div class="back">
+									<strong>1000006人已学习</strong>
+									<button class="greenbtn">立即学习</button>
+								</div>
+							</a>
+						</div>
+						<div class="card-transform">
+							<a href="#" class="flipper">
+								<div class="front">
+									<img src="img/knowledgepath/551b5d8b3619d.png" alt="Android">
+									<h2>WatchKit开发</h2>
+									<span>5门课程</span>
+								</div>
+								<div class="back">
+									<strong>1000006人已学习</strong>
+									<button class="greenbtn">立即学习</button>
+								</div>
+							</a>
+						</div>
+						<div class="card-transform">
+							<a href="#" class="flipper">
+								<div class="front">
+									<img src="img/knowledgepath/55519f5fc3333.png" alt="Android">
+									<h2>Docker</h2>
+									<span>9门课程</span>
+								</div>
+								<div class="back">
+									<strong>1000006人已学习</strong>
+									<button class="greenbtn">立即学习</button>
+								</div>
+							</a>
+						</div>
+						<div class="card-transform">
+							<a href="#" class="flipper">
+								<div class="front">
+									<img src="img/knowledgepath/54c5ebe62c7e9.png" alt="Android">
+									<h2>Egret</h2>
+									<span>7门课程</span>
+								</div>
+								<div class="back">
+									<strong>1000006人已学习</strong>
+									<button class="greenbtn">立即学习</button>
+								</div>
+							</a>
+						</div>
+						<div class="card-transform">
+							<a href="#" class="flipper">
+								<div class="front">
+									<img src="img/knowledgepath/5553fd84d5963.png" alt="Android">
+									<h2>Arduino</h2>
+									<span>14门课程</span>
+								</div>
+								<div class="back">
+									<strong>1000006人已学习</strong>
+									<button class="greenbtn">立即学习</button>
+								</div>
+							</a>
+						</div>
+						<div class="card-transform">
+							<a href="#" class="flipper">
+								<div class="front">
+									<img src="img/knowledgepath/556543603b3e8.png" alt="Android">
+									<h2>Android UiAutomator</h2>
+									<span>20门课程</span>
+								</div>
+								<div class="back">
+									<strong>1000006人已学习</strong>
+									<button class="greenbtn">立即学习</button>
+								</div>
+							</a>
+						</div>
+						<div class="card-transform">
+							<a href="#" class="flipper">
+								<div class="front">
+									<img src="img/knowledgepath/56e619ce2f043.png" alt="Android">
+									<h2>JavaScript</h2>
+									<span>43门课程</span>
+								</div>
+								<div class="back">
+									<strong>1000006人已学习</strong>
+									<button class="greenbtn">立即学习</button>
+								</div>
+							</a>
+						</div>
+						<div class="card-transform">
+							<a href="#" class="flipper">
+								<div class="front">
+									<img src="img/knowledgepath/56f88e9c948b9.png" alt="Android">
+									<h2>Node.js</h2>
+									<span>39门课程</span>
+								</div>
+								<div class="back">
+									<strong>1000006人已学习</strong>
+									<button class="greenbtn">立即学习</button>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 精品课程 -->
+		<div class="excellent">
+			<div class="w-1000 mar-t40">
+				<div class="index-public-title cf">
+					<strong><a href="#">精品系列课程</a></strong><i class="way">?</i>
+					<span class="way-info">更相关的课程，更有效的学习</span><a href="#" class="more-lesson">更多>></a>
+				</div>
+				<div class="wikibox mar-t20">
+					<div class="lesson-card f_1 cf" >
+						<h2>Python实战系列</h2>
+						<div class="images">
+							<img src="img/excellent/171012062158.jpg" alt="Python实战系列">
+						</div>
+						<div class="other">
+							<span class="lesson-count">7门</span>
+							<span class="learn-count">396230人学习</span>
+							<div class="collect">
+								<span class="btn btn-def exc-sc greenbtn">收藏</span>
+							</div>
+						</div>
+						<div class="describe">
+							<div class="picture">
+								<a href="#">
+									<img src="img/excellent/avatar_3077154.jpg" alt="11">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">kingname</a>
+							</div>
+							<div class="text">
+								<a href="#">本系列课程为Python实战系列课程：使用微信控制电脑，使用Python的Web框架Flask搭建网页，并使用网页控制电脑；使用wxPython编写图形化的程序，并进一步将这个程序发展为远程控制程序。</a>
+							</div>
+							<a href="#" class="btn btn-def greenbtn msxx">马上学习</a>
+						</div>
+						<!-- describe结束 -->
+					</div>
+					<div class="lesson-card f_1">
+						<h2>Java设计模式</h2>
+						<div class="images">
+							<img src="img/excellent/261410253583.jpg" alt="Python实战系列">
+						</div>
+						<div class="other">
+							<span class="lesson-count">7门</span>
+							<span class="learn-count">396230人学习</span>
+							<div class="collect">
+								<span class="btn btn-def exc-sc greenbtn">收藏</span>
+							</div>
+						</div>
+						<div class="describe">
+							<div class="picture">
+								<a href="#">
+									<img src="img/excellent/avatar_96865.jpg" alt="11">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">hexter</a>
+							</div>
+							<div class="text">
+								<a href="#">本系列课程为Python实战系列课程：使用微信控制电脑，使用Python的Web框架Flask搭建网页，并使用网页控制电脑；使用wxPython编写图形化的程序，并进一步将这个程序发展为远程控制程序。</a>
+							</div>
+							<a href="#" class="btn btn-def greenbtn msxx">马上学习</a>
+						</div>
+					</div>
+					<div class="lesson-card f_1">
+						<h2>Axure从入门到精通系列</h2>
+						<div class="images">
+							<img src="img/excellent/141830293586.jpg" alt="Python实战系列">
+						</div>
+						<div class="other">
+							<span class="lesson-count">7门</span>
+							<span class="learn-count">396230人学习</span>
+							<div class="collect">
+								<span class="btn btn-def exc-sc greenbtn">收藏</span>
+							</div>
+						</div>
+						<div class="describe">
+							<div class="picture">
+								<a href="#">
+									<img src="img/excellent/1x9r01m08jn6e.jpeg" alt="11">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">J-kevin</a>
+							</div>
+							<div class="text">
+								<a href="#">本系列课程为Python实战系列课程：使用微信控制电脑，使用Python的Web框架Flask搭建网页，并使用网页控制电脑；使用wxPython编写图形化的程序，并进一步将这个程序发展为远程控制程序。</a>
+							</div>
+							<a href="#" class="btn btn-def greenbtn msxx">马上学习</a>
+						</div>
+					</div>
+					<div class="lesson-card f_1">
+						<h2>Python初级教程</h2>
+						<div class="images">
+							<img src="img/excellent/201651212863.jpg" alt="Python实战系列">
+						</div>
+						<div class="other">
+							<span class="lesson-count">7门</span>
+							<span class="learn-count">396230人学习</span>
+							<div class="collect">
+								<span class="btn btn-def exc-sc greenbtn">收藏</span>
+							</div>
+						</div>
+						<div class="describe">
+							<div class="picture">
+								<a href="#">
+									<img src="img/excellent/3nqwzumk2r288.jpeg" alt="11">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">韦苏恩</a>
+							</div>
+							<div class="text">
+								<a href="#">本系列课程为Python实战系列课程：使用微信控制电脑，使用Python的Web框架Flask搭建网页，并使用网页控制电脑；使用wxPython编写图形化的程序，并进一步将这个程序发展为远程控制程序。</a>
+							</div>
+							<a href="#" class="btn btn-def greenbtn msxx">马上学习</a>
+						</div>
+					</div>
+					<div class="clear"></div>
+
+				</div>
+			</div>
+		</div>
+		<!-- wiki -->
+		<div class="wiki">
+			<div class="w-1000 mar-t40">
+				<div class="index-public-title cf">
+					<strong><a href="#">Wiki</a></strong><i class="way">?</i>
+					<span class="way-info">IT技术图文教程库 程序员的藏经阁</span><a href="#" class="more-lesson">更多>></a>
+				</div>
+				<div class="wikibox mar-t20">
+					<!-- one-wiki -->
+					<div class="one-wiki">
+						<h2>推荐</h2>
+						<div class="wiki-img mar-t10 cf">
+							<dl class="cf">
+								<dd>
+									<a href="#">
+										<div class="imgbox">
+											<i class="look"></i>
+											<img class="fengmian" src="img/bc4abefb892d449d992bb76eaef70ba2.jpg" alt="Java程序员眼中的Linux">
+										</div>
+										<h3>Java程序员眼中的Linux</h3>
+										<span>120页/30章</span>
+									</a>
+								</dd>
+								<dd>
+									<a href="#">
+										<div class="imgbox">
+											<i class="look"></i>
+											<img class="fengmian" src="img/6cf980d73a694bbfad9e0bced1a9d045.jpg" alt="博客搭建">
+										</div>
+										<h3>Djanjo搭建博客</h3>
+										<span>70页/30章</span>
+									</a>
+								</dd>
+							</dl>
+							<div class="clear"></div>
+							<ul>
+								<li>
+									<a href="#">
+										<p>· Lua教程</p>
+										<span>96页/25章</span>
+										
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>· iOs与人机交互指南</p>
+										<span>294页/48章</span>
+										
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>· Struts2教程</p>
+										<span>154页/31章</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- <div class="clear"></div> -->
+					</div>
+					<!-- one-wiki -->
+					<div class="one-wiki">
+						<h2>最新</h2>
+						<div class="wiki-img cf mar-t10">
+							<dl class="cf">
+								<dd>
+									<a href="#">
+										<div class="imgbox">
+											<i class="look"></i>
+											<img class="fengmian" src="img/7eed202733fb4300af9d7934e616f264.jpg" alt="Java程序员眼中的Linux">
+										</div>
+										<h3>Material Design</h3>
+										<span>738490人学习</span>
+									</a>
+								</dd>
+								<dd>
+									<a href="#">
+										<div class="imgbox">
+											<i class="look"></i>
+											<img class="fengmian" src="img/dacf17869f2e494eafc59057379acaa9.jpg" alt="博客搭建">
+										</div>
+										<h3>Swift2.0教程</h3>
+										<span>516198人学习</span>
+									</a>
+								</dd>
+							</dl>
+							<div class="clear"></div>
+							<ul>
+								<li>
+									<a href="#">
+										<p>· React Native中文版</p>
+										<span>434961人学习</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>· React中文版</p>
+										<span>74733人学习</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>· Spring教程</p>
+										<span>57859人学习</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- <div class="clear"></div> -->
+					</div>
+					<!-- one-wiki -->
+					<div class="one-wiki">
+						<h2>热门</h2>
+						<div class="wiki-img cf mar-t10">
+							<dl class="cf">
+								<dd>
+									<a href="#">
+										<div class="imgbox">
+											<i class="look"></i>
+											<img class="fengmian" src="img/40ad2cd7b04c49b781263dd37cab62f6.jpg" alt="Java程序员眼中的Linux">
+										</div>
+										<h3>Java程序员眼中的Linux</h3>
+										<span>120页/30章</span>
+									</a>
+								</dd>
+								<dd>
+									<a href="#">
+										<div class="imgbox">
+											<i class="look"></i>
+											<img class="fengmian" src="img/d0cc39eaa8fc44dd8ba9f3fba467d38c.jpg" alt="博客搭建">
+										</div>
+										<h3>Djanjo搭建博客</h3>
+										<span>70页/30章</span>
+									</a>
+								</dd>
+							</dl>
+							<div class="clear"></div>
+							<ul>
+								<li>
+									<a href="#">
+										<p>· Lua教程</p>
+										<span>96页/25章</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>· iOs与人机交互指南</p>
+										<span>294页/48章</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>· Struts2教程</p>
+										<span>154页/31章</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- 合作企业 -->
+		<div class="media">
+			<div class="learnbox w-1000 mar-t40">
+				<div class="index-public-title cf">
+					<strong><a href="#">战略合作企业</a></strong>
+					<span class="way-info"></span><a href="#" class="more-lesson">更多>></a>
+				</div>
+				<div class="strategy w-1000">
+					<div class="focuswork-wrap strategy-box">
+						<span class="mr_frBtnL left_1 prev"></span>
+				        <div class="endetail">
+				          	<ul>
+				           		<li><a href="#" ><img src="img/enterprise/microsoft.jpg" alt="微软" /></a></li>
+					           	<li><a href="#" ><img src="img/enterprise/tengxun.jpg" alt="腾讯" /></a></li>
+					           	<li><a href="#"><img src="img/enterprise/chukong.jpg" alt="触控" /></a></li>
+					           	<li><a href="#" ><img src="img/enterprise/557f8ff48f7d3.jpg" alt="Qual" /></a></li>
+					           	<li><a href="#" ><img src="img/enterprise/54d1d9f50e1af.jpg" alt="AMD" /></a></li>
+					           	<li><a href="#"><img src="img/enterprise/keda.jpg" alt="科大讯飞"/></a></li>
+					           	<li><a href="#" ><img src="img/enterprise/tuling.jpg" alt="图灵"/></a></li>
+					           	<li><a href="#" ><img src="img/enterprise/tingyun.jpg" alt="听云"/></a></li>
+					           	<li><a href="#"><img src="img/enterprise/juhe.jpg" alt="聚合数据"/></a></li>
+					           	<li><a href="#" ><img src="img/enterprise/54feae1060a75.jpg" alt="Bootstrap中文网"/></a></li>
+					           	<li><a href="#" ><img src="img/enterprise/54ffb46961d0d.jpg" alt="apache"/></a></li>
+					           	<li><a href="#"><img src="img/enterprise/55078d94affa7.jpg" alt="oneAPM"/></a></li>
+					           	<li><a href="#" ><img src="img/enterprise/5513774149948.png" alt="友盟"/></a></li>
+					           	<li><a href="#" ><img src="img/enterprise/551df2a07a195.png" alt="云测"/></a></li>
+					           	<li><a href="#"><img src="img/enterprise/556e6608940cb.jpg" alt="直达号"/></a></li>
+					           	<li><a href="#" ><img src="img/enterprise/55755bc57f9c9.png" alt="机智云"/></a></li>
+					           	<li><a href="#" ><img src="img/enterprise/54d18f3f14fd6.jpg" alt="微软公开课"/></a></li>
+					           	<li><a href="#"><img src="img/enterprise/55cab4db88fee.png" alt="DAO云"/></a></li>
+					           	<li><a href="#" ><img src="img/enterprise/55d2fa95ecda8.jpg" alt="青云"/></a></li>
+					           	<li><a href="#" ><img src="img/enterprise/55d2fd0080bfa.png" alt="灵雀云"/></a></li>
+					           	<li><a href="#"><img src="img/enterprise/5637373968bae.png" alt="FileMaker"/></a></li>
+				          	</ul>
+				        </div>
+				        <span class="mr_frBtnR right_1 next"></span>
+					</div>
+					<!-- <script language="javascript">
+				    jQuery(".focuswork-wrap").slide({titCell:"",mainCell:".endetail ul",autoPage:true,effect:"leftLoop",vis:6});
+				    </script> -->
+				</div>
+			</div>
+		</div>
+		<!-- 高校 -->
+		<div class="university">
+			<div class="learnbox w-1000 mar-t40">
+				<div class="index-public-title cf">
+					<strong><a href="#">合作院校</a></strong>
+					<span class="way-info"></span><a href="#" class="more-lesson">更多>></a>
+				</div>
+				<div class="focuswork-wrap swiper-car-box">
+					<span class="mr_frBtnL left_2 prev"></span>
+				        <div class="university-list">
+				          	<ul>
+				           		<li><a href="#" ><img src="img/university/40669370a3f2ea7e3d21a6d182cf296c.png" alt="东北大学" /></a></li>
+					           	<li><a href="#" ><img src="img/university/1eb9dcb3193de807d21941b297483635.png" alt="北京邮电" /></a></li>
+					           	<li><a href="#"><img src="img/university/c9a111a4946bf39e77cd811c207740b9.png" alt="武汉大学" /></a></li>
+					           	<li><a href="#" ><img src="img/university/496ab840e239a60c1bb4b1139268c54e.png" alt="天津大学" /></a></li>
+					           	<li><a href="#" ><img src="img/university/3ab8eb024ecd5a8dce2c5f83972781b3.png" alt="哈尔滨工程大学" /></a></li>
+
+					           	<li><a href="#" ><img src="img/university/b05d88a6f5306cf55905c8fcb2e49b89.png" alt="重庆大学" /></a></li>
+					           	<li><a href="#" ><img src="img/university/8dda2bb223523163ca596c7f026de6ad.png" alt="北京交通大学" /></a></li>
+					           	<li><a href="#"><img src="img/university/56bcbb484f1da10f7af7a0c168a9f6e0.png" alt="中国矿业大学" /></a></li>
+					           	<li><a href="#" ><img src="img/university/acd12acf25c0681c43ab4144d2955aec.png" alt="内蒙古大学" /></a></li>
+					           	<li><a href="#" ><img src="img/university/62906dcda2846bc2437efa99ab382722.png" alt="辽宁大学" /></a></li>
+					           	<li><a href="#" ><img src="img/university/c14635ad605aca1d593e1e52500945af.png" alt="北京化工大学" /></a></li>
+					           	<li><a href="#" ><img src="img/university/604ebd122c8734703e1f49f7b4d842ad.png" alt="东南大学" /></a></li>
+								<li><a href="#" ><img src="img/university/c2000b91a02f14b794d2c9b9071e745d.png" alt="厦门大学" /></a></li>
+				          	</ul>
+				        </div>
+			        <span class="mr_frBtnR right_2 next"></span>
+				</div>
+				
+			</div>
+		</div>
+		<!-- 媒体 -->
+		<div class="media">
+			<div class="learnbox w-1000 mar-t40">
+				<div class="index-public-title cf">
+					<strong><a href="#">媒体报道</a></strong>
+					<span class="way-info"></span><a href="#" class="more-lesson">更多>></a>
+				</div>
+				<div class="strategy w-1000">
+					<div class="focuswork-wrap strategy-box">
+						<span class="mr_frBtnL left_1 prev"></span>
+				        <div class="endetail">
+				          	<ul>
+				           		<li><a href="#" ><img src="img/media/mt_1_42b5088.jpg" alt="新浪" /></a></li>
+					           	<li><a href="#" ><img src="img/media/mt_2_28e84dd.jpg" alt="21CN财经" /></a></li>
+					           	<li><a href="#"><img src="img/media/mt_3_46bc154.jpg" alt="36Kr" /></a></li>
+					           	<li><a href="#" ><img src="img/media/mt_4_2376f75.jpg" alt="芥末堆" /></a></li>
+					           	<li><a href="#" ><img src="img/media/mt_5_8427d73.jpg" alt="搜狐" /></a></li>
+					           	<li><a href="#"><img src="img/media/mt_6_21a38b7.jpg" alt="腾讯网"/></a></li>
+					           	<li><a href="#" ><img src="img/media/mt_7_7b98ea4.jpg" alt="环球网财经"/></a></li>
+					           	<li><a href="#" ><img src="img/media/mt_8_22fde55.jpg" alt="网易"/></a></li>
+					           	<li><a href="#"><img src="img/media/mt_9_c0db122.jpg" alt="多知网"/></a></li>
+					           	<li><a href="#" ><img src="img/media/mt_10_d2a046a.jpg" alt="中华财经"/></a></li>
+					           	<li><a href="#" ><img src="img/media/mt_11_82c3d18.jpg" alt="飞象网"/></a></li>
+					           	<li><a href="#"><img src="img/media/mt_12_47fcda1.jpg" alt="投资界"/></a></li>
+					           	<li><a href="#" ><img src="img/media/mt_13_fefd1ec.jpg" alt="投资潮"/></a></li>
+					           	<li><a href="#" ><img src="img/media/mt_14_d3100a3.jpg" alt="凤凰教育"/></a></li>
+				          	</ul>
+				        </div>
+				        <span class="mr_frBtnR right_1 next"></span>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- 页脚 -->
+	<div class="footer mar-t50">
+		<div class="jkinfo-block">
+			<div class="jkinfo">
+				<dl>
+					<dt><a href="#">极客学院</a></dt>
+					<dd>·<a href="#">职业课程库</a></dd>
+					<dd>·<a href="#">知识体系图</a></dd>
+					<dd>·<a href="#">职业路径图</a></dd>
+					<dd>·<a href="#">企业课程</a></dd>
+					<dd>·<a href="#">资源下载</a></dd>
+					<dd>·<a href="#">课程标签</a></dd>
+				</dl>
+				<dl>
+					<dt><a href="#">网站服务</a></dt>
+					<dd>·<a href="#">课程需求</a></dd>
+					<dd>·<a href="#">免费体验VIP</a></dd>
+					<dd>·<a href="#">黑板报</a></dd>
+					<dd>·<a href="#">网站地图</a></dd>
+				</dl>
+				<dl>
+					<dt><a href="#">帮助中心</a></dt>
+					<dd>·<a href="#">技术问答</a></dd>
+					<dd>·<a href="#">VIP权益</a></dd>
+					<dd>·<a href="#">常见问题</a></dd>
+					<dd>·<a href="#">服务条款</a></dd>
+					<dd>·<a href="#">版权声明</a></dd>
+					<dd>·<a href="#">免责声明</a></dd>
+				</dl>
+				<dl>
+					<dt><a href="#">交流合作</a></dt>
+					<dd>·<a href="#">关于我们</a></dd>
+					<dd>·<a href="#">联系我们</a></dd>
+					<dd>·<a href="#">社会招聘</a></dd>
+					<dd>·<a href="#">布道师招募</a></dd>
+					<dd>·<a href="#">合作咨询</a></dd>
+					<dd>·<a href="#">友情链接</a></dd>
+					<dd>·<a href="#">实战教练招募</a></dd>
+				</dl>
+				<div class="search-share">
+					<strong class="jktxt">极客学院，编程是一种信仰！</strong>
+					<div class="app-download">
+						<a href="#">
+							<img href="#" src="img/iphone_ecb3977.png" alt="" width="21">
+							<div>
+								<strong>手机客户端</strong>
+								<p>离线缓存 随时学习</p>
+							</div>
+						</a>
+					</div>
+					<div class="share"> 
+						<a href="#" class="sina-icon"></a>
+						<a href="#" class="tieba-icon"></a>
+						<a href="#" class="qq-icon"></a>
+						<div class="clear"></div>
+					</div>
+					<div class="kefu-online">
+						<a class="apply" href="#">
+							<div class="kefu-icon online"></div>
+							<h5>联系我们</h5>
+							<p>工作日9:00-21:00在线</p>
+							<div class="clear"></div>
+						</a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			
+		</div>
+		<div class="w-1000 copyright">
+			Copyright © 2013-2016
+		 	<strong><a href="#" target="_blank">北京优亿致远无线技术有限公司</a></strong>
+			<strong><a href="http://www.jikexueyuan.com/" target="_blank">jikexueyuan.com</a></strong>
+		 	All Rights Reversed. 京ICP备11018032号-8 京公网安备11010802020210
+		</div>
+	</div>
+<!-- wrapper end-->
+</div>
+	<script src="js/jquery.js" language="javascript" type="text/javascript"></script>
+	<script language="javascript" type="text/javascript" src="js/ss.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
+	<script src="js/task07_2_1.js" type="text/javascript"></script>
+	<!-- 显示热门课程，推荐，切换js -->
+</body>
+</html>

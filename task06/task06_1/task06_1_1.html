@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" href="css/task06_1_1.css" type="text/css">
+	<title>计算器</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="calculator">
+			<table class="cal-panel">
+				<thead>
+					<tr>
+						<th colspan="5" rowspan="2"><input id="show" type="text" value="0" class="screen" disabled="disabled"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><input class="btn1 " type="button" value="←" onclick="del()" hidefocus="true"></td>
+						<td><input class="btn1" type="button" value="C" onclick="clearscreen()" hidefocus="true"></td>
+						<td><input class="btn3" type="button" value="exp" onclick="exp()" hidefocus="true"></td>
+						<td><input class="btn3" type="button" value="log" onclick="log()" hidefocus="true"></td>
+						<td><span class="pow">x<sup>y</sup></span><input class="btn3" type="button" value="" onclick="pow()" hidefocus="true"></td>
+					</tr>
+					<tr>
+						<td><input class="btn2 " type="button" value="sin" onclick="sin()" hidefocus="true"></td>
+						<td><input class="btn2" type="button" value="cos" onclick="cos()" hidefocus="true"></td>
+						<td><input class="btn2" type="button" value="tan" onclick="tan()" hidefocus="true"></td>
+						<td><input class="btn2" type="button" value="+/-" onclick="neg()" hidefocus="true"></td>
+						<td><input class="btn2" type="button" value="1/x" onclick="reverse()" hidefocus="true"></td>
+					</tr>
+					<tr>
+						<td><input class="btn2" type="button" value="7" onclick="command(7)" hidefocus="true"></td>
+						<td><input class="btn2" type="button" value="8" onclick="command(8)" hidefocus="true"></td>
+						<td><input class="btn2" type="button" value="9" onclick="command(9)" hidefocus="true"></td>
+						<td><input class="btn2" type="button" value="÷" onclick="divide()" hidefocus="true"></td>
+						<td><input class="btn2" type="button" value="%" onclick="percent()" hidefocus="true"></td>
+					</tr>
+					<tr>
+						<td><input class="btn2" type="button" value="4" onclick="command(4)" hidefocus="true"></td>
+						<td><input class="btn2" type="button" value="5" onclick="command(5)" hidefocus="true"></td>
+						<td><input class="btn2" type="button" value="6" onclick="command(6)" hidefocus="true"></td>
+						<td><input class="btn2" type="button" value="×" onclick="times()" hidefocus="true"></td>
+						<td><input class="btn2" type="button" value="√￣" onclick="sqrt()" hidefocus="true"></td>
+					</tr>
+					<tr>
+						<td><input class="btn2" type="button" value="1" onclick="command(1)" hidefocus="true"></td>
+						<td><input class="btn2" type="button" value="2" onclick="command(2)" hidefocus="true"></td>
+						<td><input class="btn2" type="button" value="3" onclick="command(3)" hidefocus="true"></td>
+						<td><input class="btn2" type="button" value="-" onclick="minus()" hidefocus="true"></td>
+						<td rowspan="2"><input class="btn btn2 h-90" type="button" value="=" onclick="equal()" hidefocus="true"></td>
+					</tr>
+					<tr>
+						<td colspan="2"><input class="btn btn2 w-156" type="button" value="0" onclick="command(0)" hidefocus="true"></td>
+						<td><input class="btn2" type="button" value="." onclick="dot()" hidefocus="true"></td>
+						<td><input class="btn2" type="button" value="+" onclick="plus()" hidefocus="true"></td>
+						
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<script src="js/task06_1_6.js" type="text/javascript" ></script>
+</body>
+</html>

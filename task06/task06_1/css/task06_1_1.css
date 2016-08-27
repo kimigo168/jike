@@ -1,0 +1,122 @@
+.wrapper{
+	width: 536px;
+	height: 596px;
+	/*border:1px solid red;*/
+	background-color: #4CAF50;
+	margin:30px auto;
+	position: relative;
+}
+.calculator{
+	position: absolute;
+	height: 462px;
+	width: 454px;
+	border:1px solid #9E9E9E;
+	border-radius: 8px;
+	margin-left: 40px;
+	margin-top:46px;
+	background-color: #A27564;
+}
+.cal-panel{
+	margin-top: 15px;
+	margin-left: 15px;
+}
+.cal-panel tr{
+	height: 25px;
+	text-align:center;
+}
+thead tr .screen {
+	height: 80px;
+	width: 400px;
+	padding: 5px;
+	font-size:44px;
+	border-radius: 4px;
+	text-align: right;
+}
+
+.cal-panel tbody tr td{
+	width: 90px;
+	height: 50px;
+}
+tbody{
+	position: relative;
+}
+.pow{
+	position: absolute;
+	right:38px;
+	cursor: pointer;
+	opacity: 0.9;
+}
+.exp{
+	position: absolute;
+	right:210px;
+	cursor: pointer;
+	z-index: 1;
+}
+.btn1{
+	cursor: pointer;
+	font-size: 16px;
+	padding:4px 18px;
+	border: none;
+	width:72px;
+	outline: none;
+	text-align: center;
+	background-color: #EC6034;
+	-moz-transition:background-color .3s ease-in;
+	-webkit-transition:background-color .3s ease-in;
+	-o-transition:background-color .3s ease-in;
+	-ms-transition:background-color .3s ease-in;
+	transition:background-color .3s ease-in;
+}
+.btn1:hover{
+	background-color: #f00;
+}
+.btn2{
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+	padding:4px 18px;
+	border:none;
+	width:72px;
+	height: 40px;
+	outline: none;
+	text-align: center;
+	/*border:none;*/
+	background-color: #1DA79A;
+	/*background-color:#eee;*/
+		text-align:center;
+		/*过渡属性transition*/
+		-moz-transition:background-color .3s ease-in;
+		-webkit-transition:background-color .3s ease-in;
+		-o-transition:background-color .3s ease-in;
+		-ms-transition:background-color .3s ease-in;
+		transition:background-color .3s ease-in;
+
+}
+.btn3{
+	cursor: pointer;
+	font-size: 16px;
+	padding:4px 18px;
+	border: none;
+	width:72px;
+	outline: none;
+	text-align: center;
+	background-color: #1DA79A;
+	-moz-transition:background-color .3s ease-in;
+	-webkit-transition:background-color .3s ease-in;
+	-o-transition:background-color .3s ease-in;
+	-ms-transition:background-color .3s ease-in;
+	transition:background-color .3s ease-in;
+}
+.btn3:hover,.btn2:hover{
+	background-color:#090;
+}
+
+.co-1{
+	color:white;
+}
+.h-90{
+	height: 90px;
+}
+.w-156{
+	width: 156px;
+}

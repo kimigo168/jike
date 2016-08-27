@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>部分内容的tab标签切换</title>
+	<link rel="stylesheet" type="text/css" href="css/task07_2_1.css">
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<style type="text/css">
+		.recommend{
+			width: 218px;
+			border:1px solid red;
+		}
+		.start-list{
+			/*display: block;*/
+			display: none;
+		}
+		.movelist{
+			/*display: none;*/
+			display: block;
+		}
+	</style>
+	
+</head>
+<body>
+	<div class="recommend">
+		<ul class="start-list">
+			<li class="starli litop">
+				<span class="question-icon icon"></span>
+				<span class="title">问答</span>
+				<span class="angle-bottom"></span>
+			</li>
+			<li class="starli litop">
+				<span class="wiki-icon icon"></span>
+				<span class="title">wiki</span>
+				<span class="angle-bottom"></span>
+			</li>
+			<li class="starli litop">
+				<span class="course-icon icon"></span>
+				<span class="title">课程</span>
+				<span class="angle-bottom"></span>
+			</li>
+			<li class="starli litop">
+				<span class="community-icon icon"></span>
+				<span class="title">社群</span>
+				<span class="angle-bottom"></span>
+			</li>
+			<li class="starli">
+				<a href="#">
+					<span class="download-icon icon"></span>
+					<span class="title">下载</span>
+				</a>
+			</li>
+			<li class="starli">
+				<a href="#">
+					<span class="knowledge-icon icon"></span>
+					<span class="title">知识</span>
+				</a>
+			</li>
+			<li class="starli">
+				<a href="#">
+					<span class="career-icon icon"></span>
+					<span class="title">职业</span>
+				</a>
+			</li>
+			<li class="starli">
+				<a href="#">
+					<span class="vip-icon icon"></span>
+					<span class="title">VIP</span>
+				</a>
+			</li>
+			<div class="clear udclear"></div>
+		</ul>
+			<!-- 隐藏的课程 -->
+		<div class="movelist">
+			<!-- 问答、wiki、课程、社群 -->
+			<ul class="type-list cf">
+				<li class="question active">问答</li>
+				<li class="wiki">wiki</li>
+				<li class="lesson">课程</li>
+				<li class="group">社群</li>
+			</ul>
+			<!-- 对应li的内容 -->
+			<div class="licontent">
+				<!-- 问答详情 -->
+				<ul class="question tab-content cf">
+					<li>
+						<a href="#">
+							<img src="img/54578ddd8e62a.png" width="16" alt="问答技巧">
+							<span class="title">【问答技巧】怎样提问才能让我的问题更快速被解答？</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/54eeb7cba8791.png" width="16" alt="中文文档">
+							<span class="title">Bootstrap 最新版 V4 中文文档</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/devbase.png" width="16" alt="老师分享">
+							<span class="title">【老师分享】对LPS的Manacher算法感兴趣的同学请</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/games.png" width="16" alt="">
+							<span class="title">build_native.py时报错？</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/mobile.png" alt="超级菜鸟成长">
+							<span class="title">超级菜鸟想成为怎么成长？</span>
+						</a>
+					</li>
+				</ul>
+				<div class="recommendWiki">
+					<ul class="wiki cf">
+						<li>
+							<a href="#">
+								<img src="img/bc4abefb892d449d992bb76eaef70ba2.jpg " alt="java程序员眼中的Linux">
+								<p class="title">Java 程序员眼中的 Linux</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/6cf980d73a694bbfad9e0bced1a9d045.jpg" alt="搭建博客">
+								<p class="title">Django 搭建博客</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/82d392493bba44c4ab1199f03d2e23df.jpg" alt="Lua教程">
+								<p class="title">Lua 教程</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="recommendLesson">
+					<ul class="lesson cf">
+						<li>
+							<a href="#">
+								<img src="img/html.png" alt="html">
+								<p class="title">HTML5开发</p>	
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/android.png" alt="android">
+							<p class="title">Android</p>	
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/Java.png" alt="Java">
+							<p class="title">Java语言</p>	
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/55028a07c02d1.jpg" alt="JavaWeb">
+								<p class="title">JavaWeb</p>	
+							</a>
+							
+						</li>
+					</ul>
+				</div>
+				<div class="recommendGroup ">
+					<ul class="group cf">
+						<li class="cf">
+							<img src="img/c58bb41944592a9e1bf334472e5c078d.png" class="picture" alt="android1">
+							<div class="info">
+								<p class="title">Android工程师</p>
+								<p class="count">已有<span>1106</span>人加入</p>
+							</div>
+							<a href="#" class="join">＋ 加入</a>
+						</li>
+						<li class="cf">
+							<img src="img/b6b490c2efa84f1ea9ee435323118560.png" class="picture" alt="2222">
+							<div class="info">
+	                            <p class="title">Web大前端工程师</p>
+	                            <p class="count">已有<span>1409</span>人加入</p>
+	                        </div>
+	                        <a href="#" class="join">＋ 加入</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 隐藏的课程 end-->
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+	<script>
+		$(".litop").each(function(index){
+			$(this).mouseover(function(){
+				$(".start-list").css("display","none")
+				$(".movelist").css("display","block");
+				$(".licontent ul.tab-content").removeClass("tab-content");
+				$(".type-list li.active").removeClass("active");
+				$(".licontent ul").eq(index).addClass("tab-content");
+				$(".type-list li").eq(index).addClass("active");
+			}).mouseout(function(){
+
+				// $(".movelist").hide();
+				// $(".start-list").show();
+			});
+		});
+		var timoutid;
+		$(".type-list li").each(function(index){
+			var liNode = $(this);
+			$(this).mouseover(function(){
+				timoutid = setTimeout(function(){
+					$(".licontent ul.tab-content").removeClass("tab-content");
+					$(".type-list li.active").removeClass("active");
+					$(".licontent ul").eq(index).addClass("tab-content");
+					liNode.addClass("active");
+				},300);
+			}).mouseout(function(){
+				clearTimeout(timoutid);
+				
+			})
+
+		});
+		$(".movelist").mouseout(function(){
+			$(".movelist").hide();
+			$(".start-list").show();	
+		});
+	</script>
+</body>
+</html>
