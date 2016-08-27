@@ -1,0 +1,114 @@
+/*正常盒子*/
+.xiezi{
+	width: 100px;
+	height: 100px;
+	background-color: orange;
+}
+.xiehe{
+	margin:100px;
+	padding:10px;
+	height: 100px;
+	width: 100px;
+	background-color: green;
+	border:5px solid red;
+	-webkit-box-shadow:5px 5px 5px 5px rgba(0,0,0,.6);
+}
+/*怪异盒子*/
+.xiezi1{
+	width: 100px;
+	height: 100px;
+	background-color: orange;
+}
+.xiehe1{
+	margin:50px;
+	margin-left: 100px;
+	padding:10px;
+	height: 130px;
+	width: 130px;
+	background-color: green;
+	border:5px solid red;
+	box-sizing: border-box;
+	-webkit-box-shadow:5px 5px 5px 5px rgba(0,0,0,.6);
+}
+.col{
+	-webkit-column-count:4;
+	-webkit-column-rule-style: dashed;
+	-webkit-column-gap:20px;
+}
+/*弹性盒子水平分栏*/
+.con{
+	display: -webkit-flex;
+	width: 600px;
+	background-color: #4CAF50;
+	margin-left: 100px;
+}
+.first{
+	height: 100px;
+	background-color: #03A9F4;
+	-webkit-flex:1;
+	-webkit-order:3;
+
+}
+.second{
+	height: 100px;
+	background-color: #E91E63;
+	-webkit-flex:1;
+	-webkit-order:1;
+}
+.third{
+	height: 200px;
+	background-color: #673AB7;
+	-webkit-flex:1;
+	-webkit-order:2;
+}
+/*垂直分栏*/
+.con1{
+	display: -webkit-flex;
+	width: 600px;
+	height: 300px;
+	background-color: #4CAF50;
+	-webkit-flex-direction:column;
+	margin-left: 100px;
+}
+
+/*旧版弹性盒子居中*/
+.box,.box2{
+	display:-webkit-box;
+	display:-moz-box;
+	margin:0;
+	margin-left: 100px;
+	padding:10px;
+	background:#4CAF50;
+	list-style:none;
+}
+.box{
+	-webkit-box-orient:horizontal;
+	-moz-box-orient:horizontal;
+	-ms-box-orient:horizontal;
+	width:260px;
+	height:100px;
+}
+.box2{
+	-webkit-box-orient:vertical;
+	-moz-box-orient:vertical;
+	-ms-box-orient:vertical;
+	width:100px;
+	height:260px;
+}
+#box2,#box6{-webkit-box-pack:center;-moz-box-pack:center;-ms-box-pack:center;}
+.box li{width:50px;}
+.box2 li{height:50px;}
+.box li:nth-child(1),.box2 li:nth-child(1){background:#F44336;}
+.box li:nth-child(2),.box2 li:nth-child(2){background:#FFC107;}
+.box li:nth-child(3),.box2 li:nth-child(3){background:#2196F3}
+#box2{-webkit-box-direction:normal;-moz-box-direction:normal;-ms-box-direction:normal;}
+#box6{-webkit-box-direction:reverse;-moz-box-direction:reverse;-ms-box-direction:reverse;}
+/*图片垂直水平居中*/
+.center{
+	width: 300px;
+	height: 300px;
+	background-color: orange;
+	display: -webkit-box;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
+}

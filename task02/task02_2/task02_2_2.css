@@ -1,0 +1,104 @@
+body{
+    background-color: #2890BF;
+    margin:0 auto;
+    padding:0;
+}
+ #wrapper{
+    margin:0 auto;
+    width: 720px;
+}  
+#main{
+   
+    width:720px;
+    height: 2740px;
+    background-color: white;
+    border-radius: 29px;
+    margin: 20px;
+}
+.h1{
+    margin: 20px 20px 0 20px;
+    padding:10px 10px 0 10px;
+    position: relative;
+}
+.c1{
+    width: 320px;
+    color:#003399;
+    font-weight: bold;
+    background-color: #EEEEEE;
+    padding: 4px 12px;
+}
+.div1{
+	display: inline;
+	float: left;
+}
+.div2{
+    display: inline;
+    float: left;
+    position: absolute;
+    top:48px;
+    left: 488px;
+}
+.div2 ul li{
+	list-style-type: none;
+	float: left;
+}
+.div2 ul li a{
+    text-decoration: none;
+    color: #FF0099;
+    font-size: small;
+}
+#content{
+    margin: 0 40px 0 40px;
+}
+.message{
+    border: 1px solid gray;
+    font-size: small;
+    border-collapse: collapse;
+}
+.message caption{
+    padding: 15px 0;
+    font-size:large;
+    border: none;
+    font-weight: bold;
+}
+
+.message > tbody > tr > td{
+    border: 1px solid grey;
+}
+
+#td1{
+    text-align: center;
+}
+.s1{
+    color: #FF0000;
+}
+.s2{
+    color:#FF0000;
+}
+.s3{
+    color:#0000CC;
+}
+a.s3{
+    text-decoration: none;
+}
+.s4{
+    font-weight: bold;
+}
+.td1{
+    text-align: right;
+}
+
+tfoot td{
+    text-align: center;
+    height: 100px;
+}
+tfoot td .btn{
+    width: 100px;
+    height: 40px;
+}
+footer{
+    font-size: small;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;  
+}
