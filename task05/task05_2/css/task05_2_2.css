@@ -1,0 +1,12 @@
+.wrap{
+	width:440px;
+	height: 300px;
+	margin:90px auto;
+	border:1px solid #555;
+}
+.box{
+	margin:20px;
+}
+.mar-t10{
+	margin-top:10px;
+}
