@@ -1,0 +1,42 @@
+#d1,#d2,#d3{
+    width: auto;
+}
+#d1{
+    text-align: center;
+    padding: 150px 0 40px 0;
+}
+#d1 img{
+    width: 330px;
+    /*height: 100px;只设置宽度或者高度*/
+}
+#d2{
+    height: 34px;
+    text-align: center;
+    padding: 0 350px;
+
+}
+.list li{
+    float: left;
+    list-style-type: none;
+}
+.list a{
+    padding: 0 5px;
+}
+#a2{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#d3{
+    height: 300px;
+    text-align: center;
+    margin: 5px 0 0 0;
+}
+.search{
+    height: 25px;
+}
+.btn{
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+}
