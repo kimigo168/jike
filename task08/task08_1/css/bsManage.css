@@ -1,0 +1,24 @@
+/*.container-fluid .row .sidebar{
+	background-color: #
+}*/
+.nav-sidebar>li{
+	margin-bottom: 2px;
+} 
+/*.page-header{
+	font-weight: bold;
+} */
+/*.main{
+	background-color: #fff;
+}*/
+tbody td a{
+	margin-right: 3px;
+}
+tbody td .edit-btn{
+	color: #17ca1b;
+}
+.item{
+	display: none;
+}
+a{
+	cursor: pointer;
+}

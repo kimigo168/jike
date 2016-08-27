@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>百度新闻后台管理系统</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/dashboard.css"> 
+	<link rel="stylesheet" type="text/css" href="css/bsManage.css">
+</head>
+<body>
+	<!-- 顶部导航 -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">百度新闻后台管理系统</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="#">主页</a>
+					</li>
+					<li>
+						<a href="#">设置</a>
+					</li>
+					<li>
+						<a href="#">消息</a>
+					</li>
+					<li>
+						<a href="#">帮助</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- 内容部分 -->
+	<div class="container-fluid">
+		<div class="row">
+			<!-- 侧栏导航 -->
+			<div class="col-sm-3 col-md-2 sidebar">
+				<ul class="nav nav-sidebar">
+					<li class="active">
+						<a class="abtn" href="#">预览全部</a>
+					</li>
+					<li>
+						<a class="abtn" href="#">推荐</a>
+					</li>
+					<li>
+						<a class="abtn" href="#">百家</a>
+					</li>
+					<li>
+						<a class="abtn" href="#">本地</a>
+					</li>
+					<li>
+						<a class="abtn" href="#">新闻添加</a>
+					</li>	
+				</ul>
+			</div>
+			<!-- 中间内容部分 -->
+			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+				<!-- 内容部分标题 -->
+				<h3 class="page-header"></h3>
+
+				<!-- 预览全部 -->
+				<div class="item viewall show">
+					<div class="table-responsive">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>新闻标题</th>
+									<th>图片地址url</th>
+									<th>新闻类别</th>
+									<th>添加时间</th>
+									<!-- <th>操作</th> -->
+								</tr>
+							</thead>
+							<tbody class="tbody-viewall">
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<!-- 推荐 -->
+				<div class="item recommend">
+					<div class="table-responsive">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>新闻标题</th>
+									<th>图片地址</th>
+									<th>新闻内容</th>
+									<th>新闻类别</th>
+									<th>添加时间</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody class="tbody-recommend">
+							</tbody>
+						</table>
+					</div>		
+				</div>
+				<!-- 百家 -->
+				<div class="item baijia">
+					<div class="table-responsive">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>新闻标题</th>
+									<th>图片地址</th>
+									<th>新闻内容</th>
+									<th>新闻类别</th>
+									<th>添加时间</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody class="tbody-baijia">
+							</tbody>
+						</table>
+					</div>		
+				</div>
+				<!-- 当地 -->
+				<div class="item local">
+					<div class="table-responsive">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>新闻标题</th>
+									<th>图片地址</th>
+									<th>新闻内容</th>
+									<th>新闻类别</th>
+									<th>添加时间</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody class="tbody-local">
+							</tbody>
+						</table>
+					</div>		
+				</div>
+
+				<!-- 新闻添加 -->
+				<div class="item add">
+					<form class="form-horizontal mar-t30" method="post">
+						<div class="form-group form-group-sm">
+							<label class="col-sm-2 control-label" for="newsTitle">新闻标题</label>
+							<div class="col-sm-10">
+								<input class="form-control" type="text" name="newstitle" id="newsTitle" placeholder="请输入标题">
+							</div>
+						</div>
+						<div class="form-group form-group-sm">
+							<label class="col-sm-2 control-label" for="newsImg">图片地址URL</label>
+							<div class="col-sm-10">
+								<input class="form-control" type="text" name="newsimg" id="newsImg" placeholder="请输入新闻图片地址">
+							</div>
+						</div>
+						<div class="form-group form-group-sm">
+							<label class="col-sm-2 control-label" for="newsContent">新闻内容</label>
+							<div class="col-sm-10">
+								<textarea class="form-control" name="newscontent" rows="3" id="newsContent"></textarea>
+							</div>
+						</div>
+						<div class="form-group form-group-sm">
+							<label class="col-sm-2 control-label" for="newsClassify">新闻类别</label>
+							<div class="col-sm-10">
+								<!-- <select class="form-control" name="newsClassify">
+									<option value="recommend">推荐</option>
+									<option value="baijia">百家</option>
+									<option value="local">本地</option>
+								</select> -->
+								<input class="form-control" type="text" name="newsclassify" id="newsClassify" placeholder="请输入新闻类型">
+							</div>
+						</div>
+						<div class="form-group form-group-sm">
+							<label class="col-sm-2 control-label" for="addTime">添加时间</label>
+							<div class="col-sm-10">
+								<input class="form-control" type="text" name="addtime" id="addTime" placeholder="请输入添加时间">
+							</div>
+						</div>
+						<div class="form-group form-group-sm">
+							<div class="col-sm-3 col-sm-offset-2">
+								<input type="submit" id="save" class="btn btn-primary" value="保存">
+								<input type="reset" id="reset" class="btn btn-success" value="重置">
+							</div>
+							<p id="createResult"></p>
+						</div>
+					</form>	
+				</div>
+				<!-- 修改新闻 -->
+				<div class="item edit">
+					<form class="form-horizontal mar-t30" id="updateDate" method="post">
+						<div class="form-group form-group-sm">
+							<label class="col-sm-2 control-label" for="edit-newsId">新闻ID#</label>
+							<div class="col-sm-10">
+								<input class="form-control" type="text" name="newsid" id="edit-newsId" placeholder="请输入id">
+							</div>
+						</div>
+						<div class="form-group form-group-sm">
+							<label class="col-sm-2 control-label" for="edit-newsTitle">新闻标题</label>
+							<div class="col-sm-10">
+								<input class="form-control" type="text" name="newstitle" id="edit-newsTitle" placeholder="请输入标题">
+							</div>
+						</div>
+						<div class="form-group form-group-sm">
+							<label class="col-sm-2 control-label" for="edit-newsImg">图片地址URL</label>
+							<div class="col-sm-10">
+								<input class="form-control" type="text" name="newsimg" id="edit-newsImg" placeholder="请输入新闻图片地址">
+							</div>
+						</div>
+						<div class="form-group form-group-sm">
+							<label class="col-sm-2 control-label" for="edit-newsContent">新闻内容</label>
+							<div class="col-sm-10">
+								<textarea class="form-control" name="newscontent" rows="3" id="edit-newsContent"></textarea>
+							</div>
+						</div>
+						<div class="form-group form-group-sm">
+							<label class="col-sm-2 control-label" for="edit-newsClassify">新闻类别</label>
+							<div class="col-sm-10">
+								<input class="form-control" type="text" name="newsclassify" id="edit-newsClassify" placeholder="请输入新闻类型">
+							</div>
+						</div>
+						<div class="form-group form-group-sm">
+							<label class="col-sm-2 control-label" for="edit-addTime">添加时间</label>
+							<div class="col-sm-10">
+								<input class="form-control" type="text" name="addtime" id="edit-addTime" placeholder="请输入添加时间">
+							</div>
+						</div>
+						<div class="form-group form-group-sm">
+							<div class="col-sm-3 col-sm-offset-2">
+								<input type="submit" id="edit-save" class="btn btn-primary" value="保存">
+								<input type="reset" id="edit-reset" class="btn btn-success" value="重置">
+							</div>
+							<p id="edit-createResult"></p>
+						</div>
+					</form>	
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>	
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bsManage.js"></script>
+</body>
+</html>
