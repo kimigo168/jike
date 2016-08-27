@@ -1,0 +1,61 @@
+h2{
+	text-align: center;
+}
+#view{
+	width: 160px;
+	height: 160px;
+	margin:160px auto 0 auto; 
+}
+#box{
+	width: 160px;
+	height: 160px;
+	text-align: center;
+	font-size: 130px;
+	/*动画效果*/
+	-webkit-animation-name: animation;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 3s;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform-origin: 80px 80px 0;
+	/*设置透视角度、距离*/
+	/*-webkit-perspective: 138px;
+	-webkit-perspective-origin: 25% -40px;*/
+}
+#box div{
+	position: absolute;
+	height: 160px;
+	width: 160px;
+	border:2px solid #000;
+	background-color: rgba(250,200,100,0.8);
+	text-align: center;
+	font-size: 130px;
+}
+#box .one{
+	-webkit-transform: translateZ(80px);
+}
+#box .two{
+	-webkit-transform: rotateX(-90deg) translateZ(80px);
+}
+#box .three{
+	-webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(80px);
+}
+#box .four{
+	-webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(80px);
+}
+#box .five{
+	-webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(80px);
+	/*或translateZ(-80px)*/
+}
+#box .six{
+	-webkit-transform: rotateY(90deg) translateZ(80px);
+}
+/*旋转*/
+@-webkit-keyframes animation{
+	0%{-webkit-transform: rotateY(0deg);}
+	16%{-webkit-transform: rotateY(-90deg);}
+	33%{-webkit-transform: rotateY(-90deg) rotateZ(135deg);}
+	50%{-webkit-transform: rotateY(225deg) rotateZ(135deg);}
+	66%{-webkit-transform: rotateY(135deg) rotateX(135deg);}
+	83%{-webkit-transform: rotateX(135deg);}
+}

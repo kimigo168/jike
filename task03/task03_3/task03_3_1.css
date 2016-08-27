@@ -1,0 +1,251 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*头部右上角导航栏，菜单*/
+.h1{
+	height: 30px;
+	margin: 16px 0 0 0;
+	padding:0;
+}	
+a{
+	color:#555;
+}
+/*一级菜单*/
+.menu{
+	width: 530px;
+	height: 30px;
+	padding: 0;
+	float: right;
+}
+.menu * {
+	margin:0;
+	padding:0;
+}
+/*悬停时文本颜色*/
+.menu a:hover{
+	color: #00c;
+}
+.menu li{
+	/*水平排列菜单*/
+	float: left;
+	list-style-type: none;
+	/*为子菜单提供定位上下文*/
+	position: relative;
+	margin-left: 0px;
+	height: 28px;
+	width: 56px;
+	line-height: 28px;
+	font-size: 13px;
+	padding:0;
+	text-align: center;
+}
+.menu li a {
+	/*让链接填充列表项*/
+	display: block;
+}
+/*临时隐藏低级菜单*/
+.menu li ul {
+	display: none;
+}
+/*二级设置子菜单*/
+.menu li ul {
+	/*临时显示二级下拉菜单*/
+	display: block;
+	width: 6px;
+	position: absolute;
+	/*左边与父菜单对齐*/
+	left: 0;
+	/*顶边与父菜单底部对齐*/
+	top:100%;
+}
+.menu li li {
+	width: 56px;
+	/*停止浮动，恢复堆叠*/
+	float: none;
+}
+
+.menu li ul {
+	/*隐藏二级下拉菜单*/
+	display: none;
+	position: absolute;
+	top:100%;
+	left: 0;
+}
+.menu li:hover > ul {
+	/*父元素悬停时显示*/
+	display: block;
+}
+.menu li li a {
+	text-decoration: none;
+}
+/*隐藏二级子菜单*/
+li ul {
+	display: none;
+}
+/*显示二级子菜单*/
+li:hover > ul {
+	display: block;
+	border:0.1em solid #666;
+	border-width: 0.1em;
+	-webkit-box-shadow:1px 1px 1px #B8B8B8;
+    -moz-box-shadow:1px 1px 1px #B8B8B8;
+     box-shadow:1px 1px 1px #B8B8B8;
+	width: 56px;
+	text-align: center;
+}
+.menu li li a:hover{
+	background-color: #38f;
+	color:white;
+}
+.s1{
+	font-weight: bold;
+}
+.more{
+	width: 90px;
+	height: 28px;
+	text-align: right;
+}
+.more a{
+	color:white;
+	text-decoration: none;
+	background-color: #38f;	
+}
+/*中间主题部分*/
+.main_outer{
+	width: 700px;
+	height: 440px;
+	margin:0 auto;
+}
+.main{
+	width: 680px;
+	height: 240px;
+	text-align: center;
+	padding: 0;
+	position: absolute;
+	top:70px;
+	left: 400px;
+}
+.img1{
+	margin-bottom: 20px;
+}
+/*.img2{
+	position: absolute;
+	left: 510px;
+	top:144px;
+}
+.img2:hover {
+	background:#fff ;
+}*/
+.photo{
+	background-image: url('img/Camera_16px_1138404_easyicon.net.ico');
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	left: 520px;
+	top:166px;
+}
+.photo:hover {
+	background-image: url('img/photo_camera_16px_1182128_easyicon.net.ico');
+}
+/*输入框效果*/
+.text{
+	width: 536px;
+	height: 34px;
+	border:1px solid #A9A9A9;
+	border-width: 0.1em;
+}
+input.text:focus {
+	border:1px solid #4791ff;
+	outline: none;
+	text-indent: 10px;
+	text-indent: 10px \9\0;
+
+	padding-left:0px;
+}
+.text:hover {
+	border-bottom-color: #a9a9a9;
+	border-width: 0.1em;
+}
+/*百度一下按钮效果*/
+#btn{
+	width: 110px;
+	height: 38px;
+	background-color: #38f;
+	line-height: 38px;
+	font-size: 16px;
+	color:white;
+	border:none;
+	position: relative;
+	top:1px;
+	left: -8px;
+	/*在IE8，9，10生效*/
+	top:2px\9;
+	left: -8px\9;
+	/*只在IE9，10上生效*/
+	top:0px \9\0;
+	left: -4px \9\0;
+	/*IE6 css hack*/
+	_top:0px;
+	_left:-4px;
+
+}
+#btn:hover {
+	background-color: #317ef3;
+	border-bottom:1px solid #2868c8;
+	box-shadow: 1px 1px 1px #ccc;
+}
+/*底部页脚及二维码等信息*/
+.footer {
+	width: 700px;
+	height: 80px;
+	/*border:1px solid red;*/
+	text-align: center;
+	margin:0 auto;
+	position: absolute;
+	left: 330px;
+	bottom: 60px;
+}
+.d1{
+	float: left;
+	width: 74px;
+	height: 70px;
+	line-height: 20px;
+	font-size: small;
+	color:#999;
+
+}
+.d4{
+	float: left;
+	width: 74px;
+	height: 70px;
+	line-height: 20px;
+	font-size: small;
+	color:#999;
+	padding-top: 10px;
+
+}
+.d2{
+	width:380px;
+	height: 70px;
+	float: left;
+	margin-left: 20px;
+}
+.d2 a{
+	color:#999;
+}
+.d3{
+
+}
+.footer_p{
+	font-size: 12px;
+	color:#999;
+	text-align:left;
+}
+.p1{
+	height: 70px;
+	width: 64px;
+	float: right;
+}
+
