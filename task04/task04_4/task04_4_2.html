@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>响应式百度首页</title>
+	<link rel="stylesheet" type="text/css" href="task04_4_2.css">
+	<script type="text/javascript">
+		// 设置下拉子菜单js函数
+		function droplist(ulwrapper){
+			if(document.getElementById(ulwrapper)){
+				console.log('show');
+				var ulwrapper=document.getElementById(ulwrapper);
+				//ulwrapper.style.display="block";
+				ulwrapper.className="ulwrapper show";
+			}
+		}
+		function droplist_hidden(ulwrapper){
+			if(document.getElementById(ulwrapper)){
+				console.log('hide');
+				var ulwrapper=document.getElementById(ulwrapper);
+				//ulwrapper.style.display="none";
+				ulwrapper.className="ulwrapper hide";
+			}
+		}
+		// 更多产品的下拉子菜单
+		function droplistmo(brwrapper){
+			if(document.getElementById(brwrapper)){
+				console.log('show');
+				var brwrapper=document.getElementById(brwrapper);
+				//ulwrapper.style.display="block";
+				brwrapper.className="brwrapper show";
+			}
+		}
+		function droplistmo_hidden(brwrapper){
+			console.log('in');
+			if(document.getElementById(brwrapper)){
+				console.log('hide');
+				var brwrapper=document.getElementById(brwrapper);
+				brwrapper.className="brwrapper hide";
+			}
+		}
+	</script>
+</head>
+<body>
+
+	<!-- 外包 -->
+	<div id="wrapper">
+		<!-- 上半部分 -->
+		<div id="head">
+			<div class="head_wrapper">
+				<!-- 头部导航栏 -->
+				<div id="nav_top">
+					<a href="http://www.nuomi.com/?cid=002540" class="mynav" name="nuomi" target="_blank">糯米</a>
+					<a href="http://news.baidu.com/" class="mynav" name="news">新闻</a>
+					<a href="http://www.hao123.com/" class="mynav" name="hao123">hao123</a>
+					<a href="http://map.baidu.com/" class="mynav" name="map">地图</a>
+					<a href="http://v.baidu.com/" class="mynav" name="video">视频</a>
+					<a href="http://tieba.baidu.com/" class="mynav" name="tieba">贴吧</a>
+					<a href="http://i.baidu.com/" class="login" name="login">登录</a>
+					<a href="#" class="setup" name="setup" onmouseover='droplist("ulwrapper")' onmouseout='droplist_hidden("ulwrapper")'>设置</a>
+					<div id="ulwrapper" onmouseover='droplist("ulwrapper")' onmouseout='droplist_hidden("ulwrapper")' class="ulwrapper">
+							<a href="#">检索设置</a>
+							<a href="#">高级设置</a>
+							<a href="#">关闭预测</a>
+							<a href="#">搜索历史</a>
+					</div>	
+					<a href="#" class="bringmore" onmouseover='droplistmo("brwrapper")' onmouseout='droplistmo_hidden("brwrapper")'>更多产品</a>
+					<div class="brwrapper" id="brwrapper" onmouseover='droplistmo("brwrapper")' onmouseout='droplistmo_hidden("brwrapper")' >
+						<div class="brmoregoods">更多产品</div>
+						<div class="brmorelist">
+							<a href="#"><span class="britem list1"></span>音乐</a>
+							<a href="#"><span class="britem list2"></span>图片</a>
+							<a href="#"><span class="britem list3"></span>知道</a>
+							<a href="#"><span class="britem list4"></span>文库</a>
+							<a href="#"><span class="britem list5"></span>风云榜</a>
+							<a href="#"><span class="britem list6"></span>百度推广</a>
+							<a href="#"><span class="britem list7"></span>全部产品&gt;&gt;</a>
+						</div>
+					</div>
+					
+				<!-- 头部导航栏 end-->	
+				</div>
+				<div class="form_middle">
+					<div class="form_middle_wrapper">
+						<!-- 百度Logo图片 -->
+						<div id="logo">
+							<img src="img/bd_logo1_31bdc765.png" alt="百度Logo" >
+						</div>
+						<!-- 输入表单 -->
+						<form action="#" method="get" id="form" class="form">
+							<span class="photo-btn" ></span><input class="text" type="text" maxlength="255" value="" autocomplete="off"/>
+							<span class="submit-btn">
+								<input type="submit" id="submit" value="百度一下" style="cursor: pointer;">
+							</span>
+						</form>
+					</div>
+				</div>
+				
+			</div>
+		<!-- 上半部分end -->	
+		</div>
+		<!-- 底部内容 -->
+		<div id="ftContent">
+			<div class="ftContent-wrapper">
+				<!-- 二维码部分 -->
+				<div class="code">
+					<!-- 百度手机二维码 -->
+					<div class="code-item code-item-c1">
+						<div class="code-img"></div>
+						<div class="code-text">
+							<p><b>百度手机</b></p>
+							<p>快人一步</p>
+						</div>
+					</div>
+					<!-- 百度糯米 -->
+					<div class="code-item code-item-c2">
+						<div class="code-img"></div>
+						<div class="code-text">
+							<p><b>百度糯米</b></p>
+							<p>一元大餐</p>
+						</div>
+					</div>
+				</div>
+				<!-- 右侧说明内容 -->
+				<div class="ftcon">
+					<p><a href="#">把百度设为首页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">关于百度</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">About Baidu</a></p>
+					<p>&copy;2016Baidu&nbsp;<a href="#">使用百度前必读&nbsp;</a><a href="#">意见反馈</a>&nbsp;京ICP证030173号&nbsp;<i class="icon-logo1"></i></p>
+					<p><i class="icon-logo2"></i>京公网安备11000002000001号</p>
+				</div>
+			</div>
+			
+		<!-- 底部内容 end-->	
+		</div>
+	<!-- 外包 end-->	
+	</div>
+	
+</body>
+</html>

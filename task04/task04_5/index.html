@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<title>初级前端面试题</title>
+</head>
+<body>
+	<h2>Web前端工程师基础面试题</h2>
+	<hr/>
+	<h3>1.自我评价一下HTML/CSS/JS的掌握情况</h3>
+	<p></p>
+	<h3>2.简述HTML经常使用的标签和作用</h3>
+	<p>Div/a/p/span/li/ul/ol/table/tr/td</p>
+	<h3>3.你认为最常遇到的兼容Bug有哪些?有哪些问题是你认为解决起来最麻烦的?</h3>
+	<p>IE6 PNG
+　　IE6 Fixed
+</p>
+	<h3>4.块级元素和行内元素都有哪些? 行内元素有哪些特点?</h3>
+	<h3>5.介绍所知道的CSS hack技巧(如：_， *， +， \9， !important 之类)</h3>
+	<h3>6.CSS定位方式有哪些?position属性的值有哪些?他们之间的区别是什么?</h3>
+	<p>在CSS中关于定位的内容是：position:relative | absolute | static | fixed</p>
+	<ul>
+		<li>static 没有特别的设定，遵循基本的定位规定，不能通过z-index进行层次分级。</li>
+		<li> relative 不脱离文档流，参考自身静态位置通过 top,bottom,left,right 定位，并且可以通过z-index进行层次分级。</li>
+		<li>absolute 脱离文档流，通过 top,bottom,left,right 定位。选53D6其最近的父级定位元素，当父级 position 为 static 时，absolute元素将以body坐标原点进行定位，可以通过z-index进行层次分级。</li>
+		<li>fixed 固定定位，这里他所固定的对像是可视窗口而并非是body或是父级元素。可通过z-index进行层次分级。
+
+</li>
+	</ul>
+	<h3>7.函数的几种定义方法？</h3>
+	<p>function a(){},var a = function(){}</p>
+	<h3>8.对象的定义方法？</h3>
+	<p>a = new Object(), a = {}</p>
+	<h3>9.类的定义方法（prototype）（继承）</h3>
+	<p>Var a = function(){}
+　　a.prototype = {}
+　　new a();
+</p>
+	<h3>10.this 关键字的指向</h3>
+	<p>obj.foo() == obj        //方法调用模式,this指向obj
+	<p>foo() == window;         //函数调用模式,this指向window</p>
+　　<p>new obj.foo() == obj    //构造器调用模式, this指向新建立对象</p>
+　　<p>foo.call(obj) == obj;//APPLY调用模式,this指向obj</p>
+</p>
+	<h3>11.什么是闭包，及其作用是什么？</h3>
+	<h3>12.事件绑定的几种方法，事件冒泡？</h3>
+	<h3>13.Ajax/json/json0070？</h3>
+	<h3>14.异步ajax的优缺点都有什么？</h3>
+	<h3>11.什么是闭包，及其作用是什么？</h3>
+	<h3>12.事件绑定的几种方法，事件冒泡？</h3>
+	<h3>13.Ajax/json/json0070？</h3>
+	<h3>14.异步ajax的优缺点都有什么？</h3>
+	<p>优点：</p>
+	<ul>
+		<li>相对于同步ajax：不会造成UI卡死，用户体验好。</li>
+		<li>相对于刷新页面，省流量</li>
+	</ul>
+	<p>缺点：</p>
+	<ul>
+		<li>后退按钮无效；</li>
+		<li>多个请求同时触发时，由于回调时间不确定，会造成混乱，避免这种混乱需要复杂的判断机制。</li>
+		<li>搜索引擎不友好</li>
+		<li>数据安全</li>
+	</ul>
+	<h3>15.常用JS框架都有什么？是否使用过jQuery，以及jQuery的优点是什么？</h3>
+	<h3>16.JS用了多久，介绍一下自己做过的JS项目？</h3>
+	<h3>17.开发调试工具和方法都有什么</h3>
+	<p>（编辑器、浏览器）</p>
+	<h3>18.类、函数、对象</h3>
+	<p>（代码表达）</p>
+	<h3>19.闭包</h3>
+	<p>（setTimeout）（产生两个首尾相连的计时器）（使用for循环产生10个计时器）||</p>
+	<h3>20.Jquery Mobile 相关</h3>
+	<h3>21.HTML5/CSS3的掌握情况</h3>
+	<h3>22.是否听说过和理解webapp？</h3>
+	<h3>23.个人擅长的语言，优缺点都是什么？</h3>
+	<h3>24.介绍一下曾经参与过的项目经验，合作开发、独立开发</h3>
+	<h3>25.编程的重要知识？</h3>
+	<h3>26.开发过程中遇到困难，如何解决？</h3>
+	<h3>27.有没有个人/开源项目</h3>
+</body>
+</html>

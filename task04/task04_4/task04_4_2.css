@@ -1,0 +1,515 @@
+/*全局样式设置*/
+body, p, form, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body {
+    font: 12px arial;
+    text-align: center;
+    background: #fff;
+}
+#wrapper{
+	position: relative;
+	height: 100%;
+}
+/*上半部分*/
+#head{
+	position: relative;
+    padding-bottom: 0;
+    height: 100%;
+    min-height: 600px;
+}
+.head_wrapper{
+	height: 100%;
+}
+/*头部导航栏选项*/
+#nav_top{
+	z-index: 2;
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 19px 0 5px 0;
+    padding: 0 96px 0 0;
+}
+#nav_top a.mynav{
+	float: left;
+    color: #333;
+    font-weight: bold;
+    line-height: 24px;
+    margin-left: 20px;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+#nav_top >a:hover{
+	color: #00c;
+}
+/*登录*/
+#nav_top .login{
+	display: inline-block;
+    float: left;
+    color: #333;
+    font-size: 13px;
+    line-height: 24px;
+    margin-left: 20px;
+    text-decoration: underline;
+}
+/*设置*/
+#nav_top .setup{
+	display: inline-block;
+    float: left;
+    color: #333;
+    line-height: 24px;
+    font-size: 13px;
+    margin-left: 20px;
+    overflow: hidden;
+    text-decoration: underline;
+}
+
+/*现将设置的内容进行隐藏*/
+
+/*通过添加显示的类显示*/
+div.show{
+	display: block;
+}
+/*通过添加隐藏的类隐藏*/
+div.hide{
+	display: none;
+}
+.ulwrapper{
+	opacity: 1;
+    display: none;
+    position: absolute;
+    right: 76px;
+    top: 24px;
+    background-color: #fff;
+    overflow: hidden;
+    z-index: 5;
+    border:1px solid #ccc;
+	-webkit-box-shadow:0px 6px 12px rgba(0,0,0,.15);
+    -moz-box-shadow:0px 6px 12px rgba(0,0,0,.15);
+     box-shadow:0px 6px 12px rgba(0,0,0,.15);
+
+}
+.ulwrapper a{
+	background: white;
+    color: #333;
+    display: block;
+    text-align: left;
+    margin: 0!important;
+    padding: 0 9px;
+    line-height: 26px;
+    text-decoration: none;
+}
+.ulwrapper a:hover{
+	background: #38f;
+    text-decoration: none;
+    color: #fff;
+}
+
+/*更多产品*/
+#nav_top .bringmore{
+	display: inline-block;
+    position: absolute;
+    right: 10px;
+    width: 60px;
+    height: 23px;
+    float: left;
+    color: white;
+    background: #38f;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid #38f;
+    margin-left: 19px;
+    margin-right: 2px;
+    text-decoration: none;
+}
+
+.brwrapper{
+	opacity: 1;
+    min-height: 600px;
+    display: none;
+    width: 85px;
+    border-left: 1px solid #e7e7e7;
+    position: absolute;
+    right: 0;
+    top: -19px;
+    background-color: #fff;
+    overflow: hidden;
+    z-index: 206;
+
+}
+.brmoregoods{
+	color: #333;
+    text-align: center;
+    width: 66px;
+    height: 43px;
+    line-height: 43px;
+    padding-top: 9px;
+    margin: 0 auto;
+    border-bottom: #f0f0f0 1px solid;
+    font-size: 13px;
+    cursor: default;
+}
+.brmorelist{
+	/*height: 267px;*/
+	overflow: hidden;
+	position: relative;
+}
+.brmorelist a{
+	display: block;
+    text-align: center;
+    width: 66px;
+    height: 76px;
+    margin: 0 auto;
+    border-bottom: 1px solid #f0f0f0;
+    color: #666;
+    text-decoration: none;
+    overflow: hidden;
+}
+/*通用样式*/
+.britem{
+	width: 36px;
+    height: 36px;
+    display: block;
+    margin: 10px auto 5px;
+    background: url(img/bdbri_icons_2e35e84b.png)  no-repeat;
+    cursor: pointer;
+}
+/*第一张图片*/
+.list1{
+	background-position: -74px -5px;
+	width: 40px;
+}
+.list2{
+	background-position: -111px -5px;
+}
+.list3{
+	background-position: -36px -1px;
+}
+.list4{
+	background-position: -146px -5px;
+}
+.list5{
+	background-position: -183px -5px;
+}
+.list6{
+	background-position: -220px -1px;
+}
+.list7{
+	height: 2px;
+	background-image: none;
+}
+/*输入表单及logo*/
+.form_middle{
+	position: relative;
+    top: 38.2%;
+}
+.form_middle_wrapper{
+	position: relative;
+    top: 52px;
+}
+#logo img{
+	width: 270px;
+}
+/*输入表单*/
+.form{
+	margin: 22px auto 0;
+    /*width: 47.7%;*/
+    width: 641px;
+    text-align: left;
+    z-index: 100;
+    position: relative;
+}
+
+/*输入文本框*/
+.text{
+	border: 1px solid #b6b6b6;
+	width: 540px;
+    height: 34px;
+    font: 16px/18px arial;
+    line-height: 22px\9;
+    padding: 0;
+    background: transparent;
+    -webkit-appearance: none;
+    margin-right: 0;
+    border-right-width: 0;
+}
+.text:hover {
+	border-color: #999;
+	/*border-width: 0.1em;*/
+}
+input.text:focus {
+	border:1px solid #4791ff;
+	text-indent: 10px;
+	/*text-indent: 10px \9\0;*/
+	border-radius: 0;
+	padding-left:0;
+	 margin-right: 0;
+    border-right-width: 0;
+    outline: none;
+}
+/*相机小图标*/
+.photo-btn{ 	
+	z-index: 1;
+    position: absolute;
+    right:108px;
+    top: 50%;
+    margin-top: -8px;
+    height: 16px;
+    width: 18px;
+    background: url(img/camera_new_679c15cc.png) 0 0 no-repeat;
+}
+.photo-btn:hover{
+	background: url(img/camera_new_679c15cc.png) 0 -20px no-repeat;
+}
+/*提交按钮及外包*/
+.submit-btn{
+	width: auto;
+    height: auto;
+    border-bottom: 1px solid transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+#submit{
+	width: 100px;
+    height: 36px;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #3385ff;
+    border:none;
+    border-bottom: 1px solid #2d78f4;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+#submit:hover{
+	background-color: #317ef3;
+}
+/*底部部分内容*/
+#ftContent{
+	height: 100px;
+    position: absolute;
+    bottom: 23px;
+    text-align: left;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 0;
+    overflow: hidden;
+}
+.ftContent-wrapper{
+	overflow: hidden;
+	margin:0 auto;
+	text-align: center;
+}
+.code{
+	display: inline-block;
+}
+.code-item{
+	float: left;
+}
+.code-img{
+	float: left;
+    width: 60px;
+    height: 60px;
+}
+.code-item-c1 .code-img{
+	background: url(img/zbios_62c636fe.png) 0 0 no-repeat;
+}
+.code-item-c2{
+	margin-left: 33px;
+}
+.code-item-c2 .code-img{
+	background: url(img/nuomi_510f7472.png) 0 0 no-repeat;;
+}
+/*字体说明*/
+.code-text{
+	float: left;
+    color: #999;
+    line-height: 23px;
+    margin: 8px 0 0 10px;
+} 
+.code-text p{
+	text-align: left;
+}
+/*右侧说明内容*/
+.ftcon{
+	display: inline-block;
+	text-align: left;
+    margin-left: 33px;
+    line-height: 22px;
+    position: relative;
+    top: -2px;
+}
+.ftcon p,.ftcon p a{
+	color: #999;
+}
+.icon-logo1{
+	/*background-position: ;*/
+    position: relative;
+    top: 3px;
+    width: 14px;
+    height: 17px;
+    display: inline-block;
+    overflow: hidden;
+    background: url(img/icons_0e814c16.png) -600px -96px no-repeat;
+}
+.icon-logo2{
+	/*background-position: -623px -96px;*/
+    position: relative;
+    top: 3px;
+    margin-right: 6px;
+    width: 14px;
+    height: 17px;
+    display: inline-block;
+    overflow: hidden;
+    background: url(img/icons_0e814c16.png)-623px -96px no-repeat;
+}
+/*媒体查询部分*/
+/*屏幕宽度768px——992px时的样式*/
+/*@media only screen and (min-width: 768px) and (max-width: 992px){
+    	 
+ }*/
+
+/*屏幕宽度小于768px时样式*/
+@media only screen and (min-width: 470px) and (max-width: 768px){
+    .form{
+    margin: 22px auto 0;
+    /*width: 47.7%;*/
+    width: 360px;
+}
+    .text{
+        width: 340px;
+    }
+     .submit-btn{
+        position: absolute;
+        right: -30px;
+        top:0;
+        z-index: 100;
+    }
+    /*百度logo图片*/
+    #logo img{
+        width:180px;
+    }
+	/*改变底部二维码区域的宽度*/
+	#ftContent{
+    margin: 0 auto;
+	margin-top: 200px;
+	height: 300px;
+    position: absolute;
+    bottom: 23px;
+    text-align: center;
+    width: 100%;
+    z-index: 0;
+    overflow: hidden;
+	}
+	.ftcon{
+		display: inline-block;
+		text-align: left;
+		margin-top: 40px;
+	    margin-left: 33px;
+	    line-height: 22px;
+	    position: relative;
+	    top: -2px;
+	}
+} 
+@media only screen and (max-width: 464px){
+    .setup{
+    opacity: 1;
+    display: none;
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    background-color: #fff;
+    overflow: hidden;
+    z-index: 2000;
+
+    }
+    .ulwrapper{
+    position: absolute;
+    right: 6px;
+    top: 54px;
+    background-color: #fff;
+    overflow: hidden;
+    z-index: 5;
+    border:1px solid #ccc;
+
+    }
+    .form{
+    margin: 22px auto 5px;
+    /*width: 47.7%;*/
+    width: 240px;
+}
+    .text{
+        border: 1px solid #b6b6b6;
+        width: 240px;
+    }
+
+   .photo-btn{  
+    z-index: 1;
+    position: absolute;
+    right:18px;
+    top: 50%;
+    margin-top: -8px;
+    height: 16px;
+    width: 18px;
+    background: url(img/camera_new_679c15cc.png) 0 0 no-repeat;
+}
+    /*提交按钮及外包*/
+    .submit-btn{
+        position: absolute;
+        right: 20%;
+        top:60px;
+        z-index: 100;
+    }
+    #submit{
+        width: 160px;
+        height: 36px;
+        color: white;
+        font-size: 15px;
+        letter-spacing: 1px;
+        background: #3385ff;
+        border: none;
+        border-bottom: 1px solid #2d78f4;
+        -webkit-appearance: none;
+        -webkit-border-radius: 0;
+    }
+    /*百度logo图片*/
+    #logo img{
+        width:180px;
+    }
+    /*改变底部二维码区域的宽度*/
+    #ftContent{
+        /*margin: 0 auto;   */
+    margin-top: 200px;
+    height: 300px;
+    position: absolute;
+    bottom: 23px;
+    text-align: center;
+    width: 100%;
+    z-index: 0;
+    overflow: hidden;
+    }
+    .code{
+        width: 140px;
+        margin:0 auto;
+    }
+    .code-item-c2{
+    margin: 20px auto 0;
+    }
+    .ftcon{
+        display: inline-block;
+        text-align: left;
+        margin-top: 40px;
+        margin-left: 33px;
+        line-height: 22px;
+        position: relative;
+        top: -2px;
+    }
+}

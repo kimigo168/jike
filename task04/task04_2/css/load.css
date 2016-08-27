@@ -1,0 +1,29 @@
+/*设置背景图片*/
+body{
+	background-image: url(../img/library1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.container{
+	margin-top: 100px;
+	border-radius: 4px;
+}
+/*设置表单的背景等样式*/
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+	background: #4CAF50;
+    border-radius: 6px;
+}
+.form-signin h3{
+	margin-top: 20px;
+    margin-bottom: 10px;
+    color:#FF9800;
+    font-weight: bold;
+
+}
+.checkbox a{
+	color:#AB5049;
+	font-weight: bold;
+}

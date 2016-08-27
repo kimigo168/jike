@@ -1,0 +1,237 @@
+/*设置背景图片*/
+body{
+	background-image: url(../img/library1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+nav{
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+}
+nav h1{
+	font-weight: bold;
+	color:#E91E63;
+}
+.loginbox{
+	height: 100%;
+	width: 960px;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	position: relative;
+	margin:0 auto;
+	background: #fff;
+}
+.welcomeinfo{
+	margin: 20px;
+	font-size: 1em;
+}
+.welcomeinfo .time{
+	color:#75808E;
+	font-weight: bold;
+}
+.logout a{
+	font-size:12px;
+	font-weight:bold;
+	color: #d37c1f;
+	border:1px solid red;
+}
+.welcomeinfo .logout{
+	/*color: #d37c1f;*/
+    cursor: pointer;
+}
+.welcome{
+	font-weight: bold;
+    color: #a1973b;	
+}
+.welcome span {
+	font-size:20px;
+	weight:bold;
+}
+.welcome strong {
+    color: #d37c1f;
+}
+.backhome{
+	float: right;
+	position: absolute;
+	right:20px;
+	/*top:20px;*/
+}
+.btn-width{
+	width: 160px;
+}
+/*改变按钮悬停时颜色*/
+.btn-width:hover{
+	background-color: #4CAF50;	
+}
+.content .side{
+	float: left;
+	width: 190px;
+	height: 100%;
+	margin-left: 20px;
+	padding:10px 0 0 10px;
+    border: 1px solid #dce0e8;
+    border-bottom: none;
+    background-color: #fafbfd;
+   /* margin-bottom: -32767px;
+    padding-bottom: 32767px;*/
+}
+.side div{
+	margin-bottom: 6px;
+}
+div ul li{
+	padding:0;
+	width: 130px;
+	height: 26px;
+	margin:0 20px;
+}
+div ul a{
+	width: 130px;
+	height: 26px;
+	font-size: 12px;
+	margin:0 1px;
+	padding:0;
+}
+/*控制菜单箭头*/
+/*打开前*/
+.nav-header.collapsed > span.glyphicon-chevron-toggle:before {
+    content: "\e114";
+}
+/*打开后表现*/
+.nav-header > span.glyphicon-chevron-toggle:before {
+    content: "\e113";
+}
+.content .main{
+	width: 710px;
+	height: 550px;
+	float: right;
+	margin-right: 20px;
+	padding-bottom: 20px;
+	border: 1px solid #dce0e8;
+	border-bottom: none;
+    background-color: #fafbfd;
+}
+/*标题*/
+.content .main .title{
+	margin:20px 20px 10px 20px;
+	height: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #b7b7b7;
+    font-size: 14px;
+    color: #a1973b;
+}
+.title .left{
+	float:left;
+	display:inline;
+}
+.title .center{
+	float: left;
+	display:inline;
+	margin-left: 100px;
+}
+.title .center a{
+	text-decoration: none;
+	color: #ff6600;
+}
+/*分享到空间、微博等样式设定*/
+.share{
+	display: block;
+	float: right;
+	width: 140px;
+	height: 18px;
+	position: relative;
+}
+.share .qzone {
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    margin-top: -3px;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    display: inline-block;
+    background: url(../img/jiathis_ico.png) 0 -64px no-repeat;
+}
+
+.sinamblog{
+	background: url(../img/jiathis_ico.png) 0 -96px no-repeat;
+	position: absolute;
+    left: 22px;
+    top: 2px;
+    margin-top: -3px;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    display: inline-block;	
+}
+.qmblog{
+	background: url(../img/jiathis_ico.png) 0 -144px no-repeat;
+	position: absolute;
+    left: 42px;
+    top: 2px;
+    margin-top: -3px;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    display: inline-block;		
+}
+.weixin{
+	background: url(../img/jiathis_ico.png) 0 -1809px no-repeat;
+	position: absolute;
+    left: 62px;
+    top: 2px;
+    margin-top: -3px;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    display: inline-block;		
+}
+.renren{
+	background: url(../img/jiathis_ico.png) 0 -160px no-repeat;
+	position: absolute;
+    left: 82px;
+    top: 2px;
+    margin-top: -3px;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    display: inline-block;		
+}
+.counter{
+	background: url(../img/counter.gif) 0 -64px no-repeat;
+	position: absolute;
+    left: 102px;
+    top: 2px;
+    margin-top: -3px;
+    width: 36px;
+    height: 16px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.counter span{
+	padding-left: 14px;
+	color:#565656;
+}
+/*正文样式*/
+.description{
+	margin:20px 20px 30px 20px;
+}
+.description p{
+	font-size: 13px;
+	color:#75808E;
+}
+.description p a{
+	color: #ff6600;
+}
+.clear{
+	clear:both;
+}
+/*页脚*/
+footer{
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	margin-bottom: 10px;
+	color:#037908;
+}

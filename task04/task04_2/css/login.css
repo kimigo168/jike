@@ -1,0 +1,85 @@
+nav{
+	background-image: url(../img/nav-head.png);
+	background-repeat:no-repeat; 
+	height: 70px;
+	/*border:1px solid red;*/
+}
+.loginbox{
+	height: 600px;
+	width: 940px;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	position: relative;
+	margin:0 100px;
+}
+.backhome{
+	float: right;
+	position: absolute;
+	right:20px;
+	top:20px;
+}
+.loginbox .inner{
+	width: 700px;
+	height: 500px;
+	border-radius: 2px;
+	margin:80px 120px 50px 120px;
+	padding:30px;
+	border: 1px solid #ccc;
+	position: relative;
+}
+.inner .input{
+	width: 300px;
+	margin-left: 10px;
+}
+/*帐号，密码框*/
+
+.sub{
+	width: 90px;
+	margin-left:100px;
+}
+.inner .sidebar{
+
+}
+.logintitle{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+	border-bottom: 1px dashed #b7b7b7;
+    font-size: 14px;
+    color: #a1973b;
+    font-weight: bold;
+}
+.inner .describe{
+    position: absolute;
+    right: 20px;
+    top:70px;
+    width: 280px;
+    min-height: 18px;
+    line-height: 18px;
+    /*#d7b388*/
+    border: 1px solid #d7b388;
+    background: #fffef2;
+    color: #966450;
+    padding-left: 22px;
+    padding-right: 2px;
+}
+.inner .describe img{
+	position: absolute;
+	left: -12px;
+	top:0;
+}
+.load{
+	width: 84px;
+}
+.tips h4{
+	color: #5993b8;
+    font-size: 14px;
+    font-weight: bold;
+}
+footer{
+	background-image: url(../img/bg_foot.png);
+	background-repeat:no-repeat; 
+	height: 50px;
+	/*border:1px solid green;*/
+	text-align: center;
+	line-height: 50px;
+}
