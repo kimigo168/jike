@@ -1,0 +1,9 @@
+/* .container{
+    width: 1000px;
+    margin:0 auto;
+} */
+p{
+    width:1000px;
+    padding-left: 10px;
+    line-height: 1.5;
+}

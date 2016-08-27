@@ -1,0 +1,137 @@
+@charset "utf-8";
+body,div,p,span,h1,h2,h3,h4,h5,h6,ul,li{
+    margin:0;
+    padding: 0;
+}
+ul,li{
+    list-style-type: none;
+}
+/*清除浮动*/
+.clearfix{
+    zoom:1;
+    &:after{
+        content: "";
+        display: block;
+        clear:both;
+    }
+}
+
+.busboard-wrapper{
+    margin:50px auto;
+    width:1000px;
+
+}
+
+.busboard{
+    height: auto;
+    background-color: green;
+}
+/*当前公交牌站点*/
+.busboard{
+    h1{
+        text-align: center;
+        font-size: 80px;
+        height:240px;
+        line-height: 240px;
+    }
+} 
+/*各路公交线路详情*/
+.bus-list{
+    border-bottom: 2px solid #fff;
+    background-color: #92c367;
+    .list-head{
+        padding-top: 15px;
+        height: 80px;
+        text-align: center;
+    }
+}
+
+.list-head{
+    /*公交车次*/
+    .busnum{
+        width:25%;
+        float: left;
+    }
+    .busnum h2{
+        font-size: 50px;
+    }
+    /*运行方向*/
+    .rout-guide{
+        width:50%;
+        float: left;
+        h3{
+            font-size: 30px;
+        }
+    }
+    /*运行时间*/
+    .runtime{
+        margin:10px 0;
+        width:25%;
+        float: left;
+         p{
+            font-weight: bold;
+        }
+    }
+} 
+$hack_ie6:'_';
+/*箭头图标*/
+.arrow{
+    .triangle-right{
+        float:left;
+        width:0;
+        height:0;
+        overflow:hidden;
+        border-top: 8px solid transparent;
+        #{$hack_ie6}border-top: 8px dashed transparent;
+        border-left: 26px solid red;
+        #{$hack_ie6}border-left: 26px solid red;
+        border-bottom: 8px solid transparent;
+        #{$hack_ie6}border-bottom: 8px dashed transparent;
+    }
+    .line{
+        float:left;
+        width:460px;
+        height:0;
+        border-bottom: 4px solid red;
+        margin-top: 6px;
+        #{$hack_ie6}margin-top: -12px;
+    }
+} 
+
+.bus-list{
+    .list-body{
+        height: 200px;
+    }
+} 
+.list-body{
+     .list-item{
+        width:860px;
+        margin:20px auto;
+    }
+}
+/*站点详情*/
+.list-item{
+    li{
+        float:left;
+        width:26px;
+        height:160px;
+        text-align: center;
+        margin-left: 6px;
+        word-break:normal;
+        span{
+            width:26px;
+            display:inline-block;
+            margin-bottom: 6px;
+        }
+    }
+} 
+/*各个站点名称*/
+.list-item{
+    .stop-text{
+        font-weight: bold;
+    }
+} 
+.footer{
+    height:140px;
+    background-color: green;
+}
